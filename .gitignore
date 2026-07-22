@@ -1,0 +1,17 @@
+# GAMA / IDE
+.metadata/
+.cache/
+.built_in_models_*
+.gama_application_workspace
+*.log
+
+# Python local
+.venv*/
+__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gros exports locaux (garder le sample)
+results/arbitrage_log.csv

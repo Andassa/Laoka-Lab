@@ -280,9 +280,17 @@ experiment LaokaLabUI type: gui {
 
 	output {
 		display "Carte du quartier" type: java2D {
-			species household aspect: base;
+			graphics "fond" {
+				draw world.shape color: rgb(245, 242, 235);
+			}
 			species magasin aspect: base;
 			species salle_de_sport aspect: base;
+			species household aspect: base;
+			overlay position: {5 #px, 5 #px} size: {280 #px, 90 #px} background: #white transparency: 0.2 {
+				draw "Maison = foyer | Magasin | Haltères = sport" at: {10 #px, 22 #px} color: #black size: 11 #px;
+				draw "Couleur foyer: bleu / vert vegan / rouge malbouffe / violet sans porc" at: {10 #px, 44 #px} color: #black size: 10 #px;
+				draw "Badge rouge = alertes nutritionnelles cumulees" at: {10 #px, 66 #px} color: #darkred size: 10 #px;
+			}
 		}
 		display "Budget" type: 2d {
 			chart "Budget moyen consomme" type: series {

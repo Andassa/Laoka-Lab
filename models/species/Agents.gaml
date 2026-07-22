@@ -536,6 +536,11 @@ species household {
 	agent_logistique mon_logistique;
 	agent_arbitrage mon_arbitrage;
 
+	image_file icone_defaut <- image_file("../includes/icons/foyer.png");
+	image_file icone_vegan <- image_file("../includes/icons/foyer_vegan.png");
+	image_file icone_malbouffe <- image_file("../includes/icons/foyer_malbouffe.png");
+	image_file icone_culture <- image_file("../includes/icons/foyer_culture.png");
+
 	action creer_agents_decision {
 		create agent_provisions number: 1 returns: ap {
 			mon_foyer <- myself;
@@ -618,20 +623,19 @@ species household {
 	}
 
 	aspect base {
-		rgb c <- #blue;
+		image_file ic <- icone_defaut;
 		if regime = "vegan" {
-			c <- #darkgreen;
+			ic <- icone_vegan;
+		} else if regime = "malbouffe_assumee" {
+			ic <- icone_malbouffe;
+		} else if ("pas_de_porc" in restrictions_culturelles) {
+			ic <- icone_culture;
 		}
-		if regime = "malbouffe_assumee" {
-			c <- #red;
-		}
-		if ("pas_de_porc" in restrictions_culturelles) {
-			c <- #purple;
-		}
-		draw circle(3.0) color: c border: #black;
-		draw nom_foyer color: #black size: 9 at: location + {0.0, -6.0};
+		draw ic size: 8.5;
+		draw nom_foyer color: #black size: 9 at: location + {0.0, -8.0};
 		if alertes_nutritionnelles > 0 {
-			draw ("!" + alertes_nutritionnelles) color: #red size: 12 at: location + {0.0, 5.0};
+			draw circle(2.2) color: #red at: location + {4.5, -4.5};
+			draw ("!" + alertes_nutritionnelles) color: #white size: 10 at: location + {4.5, -4.5};
 		}
 	}
 }

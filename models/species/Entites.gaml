@@ -28,18 +28,20 @@ species magasin {
 	string type_magasin <- "epicerie_locale";
 	list produits_disponibles <- [];
 	map prix <- [];
+	image_file icone <- image_file("../includes/icons/magasin.png");
 
 	aspect base {
-		draw square(4.0) color: #orange border: #black;
-		draw nom color: #black size: 8 at: location + {0.0, -5.0};
+		draw icone size: 9.0;
+		draw nom color: #black size: 8 at: location + {0.0, -7.0};
 	}
 }
 
 species salle_de_sport {
 	string nom <- "";
+	image_file icone <- image_file("../includes/icons/salle_sport.png");
 
 	aspect base {
-		draw triangle(4.0) color: #green border: #black;
-		draw nom color: #darkgreen size: 8 at: location + {0.0, -5.0};
+		draw icone size: 9.0;
+		draw nom color: #darkgreen size: 8 at: location + {0.0, -7.0};
 	}
 }
