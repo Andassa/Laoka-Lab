@@ -1,0 +1,433 @@
+cycle,nom_foyer,type_repas,nom_plat,cout,justification,magasin,salle_sport,achat,alertes
+0,Foyer Malgache,petit_dejeuner,Cereales lait,10000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:25 > historique:25 > nutrition:17,SuperU Andraharo,,true,0
+0,Foyer Malgache,dejeuner,Lasary voatabia,12500.0,Achat requis (tomate,citron) @ Shoprite Analakely | culture:35/35 > budget:18 > historique:17 > nutrition:12,Shoprite Analakely,,true,0
+0,Foyer Malgache,diner,Mofo gasy,7500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:7 > historique:5 > nutrition:3,Epicerie Isotry,,true,0
+0,Foyer Europeen,petit_dejeuner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:32 > nutrition:24,Shoprite Analakely,,true,0
+0,Foyer Europeen,dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:31 > nutrition:23,Shoprite Analakely,,true,0
+0,Foyer Europeen,diner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:30 > nutrition:22,Shoprite Analakely,,true,0
+0,Foyer Sans Porc,petit_dejeuner,Kitoza grille,25500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:30/35 > budget:30 > historique:30 > nutrition:24,SuperU Andraharo,,true,0
+0,Foyer Sans Porc,dejeuner,Cereales lait,6000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:30/35 > budget:26 > historique:26 > nutrition:20,SuperU Andraharo,,true,0
+0,Foyer Sans Porc,diner,Lasary voatabia,7500.0,Achat requis (tomate,citron) @ Epicerie Isotry | culture:30/35 > budget:19 > historique:18 > nutrition:13,Epicerie Isotry,,true,0
+0,Foyer Vegan,petit_dejeuner,Tsaramaso,8000.0,Stock suffisant | culture:11/35 > budget:11 > historique:11 > nutrition:10,,,false,0
+0,Foyer Vegan,dejeuner,Ravitoto aux champignons,11000.0,Stock suffisant | culture:11/35 > budget:11 > historique:10 > nutrition:9,,,false,0
+0,Foyer Vegan,diner,Lasary voatabia,5000.0,Achat requis (citron) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:9 > nutrition:8,Epicerie Isotry,,true,0
+0,Foyer Defaut,petit_dejeuner,Lasary voatabia,5000.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:35 > nutrition:27,SuperU Andraharo,,true,0
+0,Foyer Defaut,dejeuner,Tsaramaso,8000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:34 > nutrition:26,Epicerie Isotry,,true,0
+0,Foyer Defaut,diner,Kitoza grille,17000.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:33 > nutrition:25,SuperU Andraharo,,true,0
+0,Foyer Malbouffe,petit_dejeuner,Saosisy sy oeuf,5000.0,Achat requis (saucisse_porc) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:35 > nutrition:8,SuperU Andraharo,,true,0
+0,Foyer Malbouffe,dejeuner,Nuggets poulet,5500.0,Achat requis (chapelure) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:34 > nutrition:7,SuperU Andraharo,,true,0
+0,Foyer Malbouffe,diner,Chips et soda,2000.0,Achat requis (chips,soda) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:33 > nutrition:6,Shoprite Analakely,,true,0
+0,Foyer Malgache,petit_dejeuner,Cereales lait,10000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:25 > historique:25 > nutrition:17,SuperU Andraharo,,true,0
+0,Foyer Malgache,dejeuner,Lasary voatabia,12500.0,Achat requis (tomate,citron) @ Shoprite Analakely | culture:35/35 > budget:18 > historique:17 > nutrition:12,Shoprite Analakely,,true,0
+0,Foyer Malgache,diner,Mofo gasy,7500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:7 > historique:5 > nutrition:3,Epicerie Isotry,,true,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Europeen,petit_dejeuner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:32 > nutrition:24,Shoprite Analakely,,true,0
+0,Foyer Europeen,dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:31 > nutrition:23,Shoprite Analakely,,true,0
+0,Foyer Europeen,diner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:30 > nutrition:22,Shoprite Analakely,,true,0
+0,Foyer Europeen,petit_dejeuner,Cereales lait,2000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:29 > nutrition:21,SuperU Andraharo,,true,0
+0,Foyer Europeen,dejeuner,Salade composee,3500.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:28 > nutrition:20,SuperU Andraharo,,true,0
+0,Foyer Europeen,diner,Riz legumes sautes,4000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:27 > nutrition:19,Shoprite Analakely,,true,0
+0,Foyer Europeen,petit_dejeuner,Omelette fromage,4000.0,Achat requis (fromage,beurre) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:26 > nutrition:18,SuperU Andraharo,,true,0
+0,Foyer Europeen,dejeuner,Ravitoto aux champignons,5500.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:32/35 > budget:32 > historique:25 > nutrition:17,Epicerie Isotry,,true,0
+0,Foyer Europeen,diner,Henakisoa sy voatavo,7500.0,Achat requis (porc,courge) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:24 > nutrition:16,Shoprite Analakely,,true,0
+0,Foyer Europeen,petit_dejeuner,Akoho gasy,7500.0,Achat requis (gingembre,ail) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:23 > nutrition:15,Shoprite Analakely,,true,0
+0,Foyer Europeen,dejeuner,Ravitoto,8000.0,Achat requis (feuilles_manioc,porc) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:22 > nutrition:14,Shoprite Analakely,,true,0
+0,Foyer Europeen,diner,Hen'omby ritra,8000.0,Achat requis (boeuf,ail) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:21 > nutrition:13,Shoprite Analakely,,true,0
+0,Foyer Europeen,petit_dejeuner,Poulet grille legumes,8000.0,Achat requis (courgette,poivron) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:20 > nutrition:12,SuperU Andraharo,,true,0
+0,Foyer Europeen,dejeuner,Mofo gasy,1500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:32/35 > budget:24 > historique:17 > nutrition:9,Epicerie Isotry,,true,0
+0,Foyer Europeen,diner,Kabaka,2000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:32/35 > budget:20 > historique:12 > nutrition:6,Epicerie Isotry,,true,0
+0,Foyer Europeen,petit_dejeuner,Yaourt fruits,2500.0,Achat requis (yaourt,banane,mangue) @ Epicerie Isotry | culture:32/35 > budget:11 > historique:6 > nutrition:3,Epicerie Isotry,,true,0
+0,Foyer Europeen,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Europeen,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Europeen,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,Kitoza grille,25500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:30/35 > budget:30 > historique:30 > nutrition:24,SuperU Andraharo,,true,0
+0,Foyer Sans Porc,dejeuner,Cereales lait,6000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:30/35 > budget:26 > historique:26 > nutrition:20,SuperU Andraharo,,true,0
+0,Foyer Sans Porc,diner,Lasary voatabia,7500.0,Achat requis (tomate,citron) @ Epicerie Isotry | culture:30/35 > budget:19 > historique:18 > nutrition:13,Epicerie Isotry,,true,0
+0,Foyer Sans Porc,petit_dejeuner,Mofo gasy,4500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:30/35 > budget:11 > historique:9 > nutrition:6,Epicerie Isotry,,true,0
+0,Foyer Sans Porc,dejeuner,Kabaka,6000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:30/35 > budget:5 > historique:3 > nutrition:1,Epicerie Isotry,,true,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,Tsaramaso,8000.0,Stock suffisant | culture:11/35 > budget:11 > historique:11 > nutrition:10,,,false,0
+0,Foyer Vegan,dejeuner,Ravitoto aux champignons,11000.0,Stock suffisant | culture:11/35 > budget:11 > historique:10 > nutrition:9,,,false,0
+0,Foyer Vegan,diner,Lasary voatabia,5000.0,Achat requis (citron) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:9 > nutrition:8,Epicerie Isotry,,true,0
+0,Foyer Vegan,petit_dejeuner,Smoothie vert,6000.0,Achat requis (epinard) @ Epicerie Isotry | culture:11/35 > budget:5 > historique:4 > nutrition:3,Epicerie Isotry,,true,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,petit_dejeuner,Lasary voatabia,5000.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:35 > nutrition:27,SuperU Andraharo,,true,0
+0,Foyer Defaut,dejeuner,Tsaramaso,8000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:34 > nutrition:26,Epicerie Isotry,,true,0
+0,Foyer Defaut,diner,Kitoza grille,17000.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:33 > nutrition:25,SuperU Andraharo,,true,0
+0,Foyer Defaut,petit_dejeuner,Cereales lait,4000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:24,SuperU Andraharo,,true,0
+0,Foyer Defaut,dejeuner,Salade composee,7000.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:35/35 > budget:31 > historique:28 > nutrition:20,SuperU Andraharo,,true,0
+0,Foyer Defaut,diner,Riz legumes sautes,8000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:35/35 > budget:16 > historique:12 > nutrition:8,Shoprite Analakely,,true,0
+0,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+0,Foyer Malbouffe,petit_dejeuner,Saosisy sy oeuf,5000.0,Achat requis (saucisse_porc) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:35 > nutrition:8,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,dejeuner,Nuggets poulet,5500.0,Achat requis (chapelure) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:34 > nutrition:7,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,diner,Chips et soda,2000.0,Achat requis (chips,soda) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:33 > nutrition:6,Shoprite Analakely,,true,1
+0,Foyer Malbouffe,petit_dejeuner,Frites mayo,3500.0,Achat requis (pomme_de_terre,mayonnaise) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:5,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,dejeuner,Pizza fromage,6000.0,Achat requis (farine,fromage) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:31 > nutrition:4,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,diner,Pain beurre confiture,2000.0,Achat requis (pain,beurre,confiture) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:30 > nutrition:3,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,petit_dejeuner,Hot dog,4500.0,Achat requis (pain,saucisse_porc,moutarde) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:29 > nutrition:2,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,dejeuner,Burger classic,7000.0,Achat requis (pain,boeuf,fromage,sauce) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:28 > nutrition:1,Shoprite Analakely,,true,1
+0,Foyer Malbouffe,diner,Lasary voatabia,2500.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:27 > nutrition:27,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,petit_dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:26 > nutrition:26,Epicerie Isotry,,true,1
+0,Foyer Malbouffe,dejeuner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:25 > nutrition:25,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,diner,Cereales lait,2000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:24 > nutrition:24,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,petit_dejeuner,Salade composee,3500.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:35/35 > budget:28 > historique:17 > nutrition:17,SuperU Andraharo,,true,1
+0,Foyer Malbouffe,dejeuner,Riz legumes sautes,4000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:35/35 > budget:14 > historique:7 > nutrition:7,Shoprite Analakely,,true,1
+0,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+0,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance | ALERTE nutrition + salle: Dojo Mahamasina (chemin=20.801194887159518),,Dojo Mahamasina (chemin=20.801194887159518),false,1
+1,Foyer Malgache,petit_dejeuner,Tsaramaso,20000.0,Achat requis (haricot,tomate) @ Shoprite Analakely | culture:35/35 > budget:25 > historique:22 > nutrition:14,Shoprite Analakely,,true,0
+1,Foyer Malgache,dejeuner,Kabaka,10000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:35/35 > budget:9 > historique:6 > nutrition:4,Epicerie Isotry,,true,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Europeen,petit_dejeuner,Cereales lait,2000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:29 > nutrition:21,SuperU Andraharo,,true,0
+1,Foyer Europeen,dejeuner,Salade composee,3500.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:28 > nutrition:20,SuperU Andraharo,,true,0
+1,Foyer Europeen,diner,Riz legumes sautes,4000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:27 > nutrition:19,Shoprite Analakely,,true,0
+1,Foyer Sans Porc,petit_dejeuner,Tsaramaso,12000.0,Achat requis (haricot,tomate) @ Epicerie Isotry | culture:30/35 > budget:30 > historique:27 > nutrition:21,Epicerie Isotry,,true,0
+1,Foyer Sans Porc,dejeuner,Riz legumes sautes,12000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:30/35 > budget:30 > historique:26 > nutrition:20,Shoprite Analakely,,true,0
+1,Foyer Sans Porc,diner,Ravitoto aux champignons,16500.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:30/35 > budget:28 > historique:23 > nutrition:17,Epicerie Isotry,,true,0
+1,Foyer Vegan,petit_dejeuner,Smoothie vert,6000.0,Achat requis (epinard) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:8 > nutrition:7,Epicerie Isotry,,true,0
+1,Foyer Vegan,dejeuner,Riz legumes sautes,8000.0,Achat requis (haricot_vert) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:7 > nutrition:6,Epicerie Isotry,,true,0
+1,Foyer Vegan,diner,Soupe de legumes,6000.0,Achat requis (poireau,pomme_de_terre) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:6 > nutrition:5,Epicerie Isotry,,true,0
+1,Foyer Defaut,petit_dejeuner,Cereales lait,4000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:24,SuperU Andraharo,,true,0
+1,Foyer Defaut,dejeuner,Salade composee,7000.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:31 > nutrition:23,SuperU Andraharo,,true,0
+1,Foyer Defaut,diner,Riz legumes sautes,8000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:30 > nutrition:22,Shoprite Analakely,,true,0
+1,Foyer Malbouffe,petit_dejeuner,Frites mayo,3500.0,Achat requis (pomme_de_terre,mayonnaise) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:5,SuperU Andraharo,,true,0
+1,Foyer Malbouffe,dejeuner,Pizza fromage,6000.0,Achat requis (farine,fromage) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:31 > nutrition:4,SuperU Andraharo,,true,0
+1,Foyer Malbouffe,diner,Pain beurre confiture,2000.0,Achat requis (pain,beurre,confiture) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:30 > nutrition:3,SuperU Andraharo,,true,0
+1,Foyer Malgache,petit_dejeuner,Tsaramaso,20000.0,Achat requis (haricot,tomate) @ Shoprite Analakely | culture:35/35 > budget:25 > historique:22 > nutrition:14,Shoprite Analakely,,true,0
+1,Foyer Malgache,dejeuner,Kabaka,10000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:35/35 > budget:9 > historique:6 > nutrition:4,Epicerie Isotry,,true,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Europeen,petit_dejeuner,Akoho sy voanio,9000.0,Achat requis (lait_coco,gingembre) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:16 > nutrition:8,Shoprite Analakely,,true,1
+1,Foyer Europeen,dejeuner,Brochettes zebu,9000.0,Achat requis (boeuf,poivron) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:15 > nutrition:7,Shoprite Analakely,,true,1
+1,Foyer Europeen,diner,Soupe de legumes,3000.0,Achat requis (carotte,poireau,pomme_de_terre) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:14 > nutrition:6,Shoprite Analakely,,true,1
+1,Foyer Europeen,petit_dejeuner,Smoothie vert,3000.0,Achat requis (epinard,banane,lait_coco) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:13 > nutrition:5,Shoprite Analakely,,true,1
+1,Foyer Europeen,dejeuner,Tofu saute,4500.0,Achat requis (tofu,soja,brocoli) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:12 > nutrition:4,SuperU Andraharo,,true,1
+1,Foyer Europeen,diner,Pasta pesto,5000.0,Achat requis (pates,basilic,huile_olive) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:11 > nutrition:3,Shoprite Analakely,,true,1
+1,Foyer Europeen,petit_dejeuner,Voanjobory,6500.0,Achat requis (pois_du_cap,porc,feuille_brede) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:10 > nutrition:2,Shoprite Analakely,,true,1
+1,Foyer Europeen,dejeuner,Romazava,7000.0,Achat requis (brede,boeuf,ail) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:9 > nutrition:1,Shoprite Analakely,,true,1
+1,Foyer Europeen,diner,Saosisy sy oeuf,5000.0,Achat requis (saucisse_porc) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:8 > nutrition:8,SuperU Andraharo,,true,1
+1,Foyer Europeen,petit_dejeuner,Nuggets poulet,5500.0,Achat requis (chapelure) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:7 > nutrition:7,SuperU Andraharo,,true,1
+1,Foyer Europeen,dejeuner,Chips et soda,2000.0,Achat requis (chips,soda) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:6 > nutrition:6,Shoprite Analakely,,true,1
+1,Foyer Europeen,diner,Frites mayo,3500.0,Achat requis (pomme_de_terre,mayonnaise) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:5 > nutrition:5,SuperU Andraharo,,true,1
+1,Foyer Europeen,petit_dejeuner,Pizza fromage,6000.0,Achat requis (farine,fromage) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:4 > nutrition:4,Shoprite Analakely,,true,1
+1,Foyer Europeen,dejeuner,Pain beurre confiture,2000.0,Achat requis (pain,beurre,confiture) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:3 > nutrition:3,SuperU Andraharo,,true,1
+1,Foyer Europeen,diner,Hot dog,4500.0,Achat requis (pain,saucisse_porc,moutarde) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:2 > nutrition:2,SuperU Andraharo,,true,1
+1,Foyer Europeen,petit_dejeuner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:16 > historique:16 > nutrition:12,Shoprite Analakely,,true,1
+1,Foyer Europeen,dejeuner,Cereales lait,2000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:32/35 > budget:5 > historique:5 > nutrition:3,SuperU Andraharo,,true,1
+1,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Europeen,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Europeen,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance | ALERTE nutrition + salle: Fitness Park Antaninarenina (chemin=4.160998599694672),,Fitness Park Antaninarenina (chemin=4.160998599694672),false,1
+1,Foyer Sans Porc,petit_dejeuner,Tsaramaso,12000.0,Achat requis (haricot,tomate) @ Epicerie Isotry | culture:30/35 > budget:30 > historique:25 > nutrition:19,Epicerie Isotry,,true,0
+1,Foyer Sans Porc,dejeuner,Riz legumes sautes,12000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:30/35 > budget:30 > historique:24 > nutrition:18,Shoprite Analakely,,true,0
+1,Foyer Sans Porc,diner,Ravitoto aux champignons,16500.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:30/35 > budget:28 > historique:21 > nutrition:15,Epicerie Isotry,,true,0
+1,Foyer Sans Porc,petit_dejeuner,Yaourt fruits,7500.0,Achat requis (yaourt,banane,mangue) @ Epicerie Isotry | culture:30/35 > budget:9 > historique:5 > nutrition:3,Epicerie Isotry,,true,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,Riz legumes sautes,8000.0,Achat requis (haricot_vert) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:7 > nutrition:6,Epicerie Isotry,,true,0
+1,Foyer Vegan,dejeuner,Soupe de legumes,6000.0,Achat requis (poireau,pomme_de_terre) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:6 > nutrition:5,Epicerie Isotry,,true,0
+1,Foyer Vegan,diner,Salade composee,7000.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:11/35 > budget:11 > historique:5 > nutrition:4,SuperU Andraharo,,true,0
+1,Foyer Vegan,petit_dejeuner,Tofu saute,9000.0,Achat requis (soja,brocoli) @ SuperU Andraharo | culture:11/35 > budget:9 > historique:3 > nutrition:2,SuperU Andraharo,,true,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,Omelette fromage,8000.0,Achat requis (fromage,beurre) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:29 > nutrition:21,SuperU Andraharo,,true,0
+1,Foyer Defaut,dejeuner,Ravitoto aux champignons,11000.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:28 > nutrition:20,Epicerie Isotry,,true,0
+1,Foyer Defaut,diner,Vary amin anana,13000.0,Achat requis (brede,crevette) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:27 > nutrition:19,Epicerie Isotry,,true,0
+1,Foyer Defaut,petit_dejeuner,Henakisoa sy voatavo,15000.0,Achat requis (porc,courge) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:26 > nutrition:18,Shoprite Analakely,,true,0
+1,Foyer Defaut,dejeuner,Mofo gasy,3000.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:1 > historique:1 > nutrition:1,Epicerie Isotry,,true,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+1,Foyer Malbouffe,petit_dejeuner,Omelette fromage,4000.0,Achat requis (fromage,beurre) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:21 > nutrition:21,SuperU Andraharo,,true,1
+1,Foyer Malbouffe,dejeuner,Ravitoto aux champignons,5500.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:20 > nutrition:20,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,diner,Vary amin anana,6500.0,Achat requis (brede,crevette) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:19 > nutrition:19,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,petit_dejeuner,Henakisoa sy voatavo,7500.0,Achat requis (porc,courge) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:18 > nutrition:18,Shoprite Analakely,,true,1
+1,Foyer Malbouffe,dejeuner,Akoho gasy,7500.0,Achat requis (gingembre,ail) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:17 > nutrition:17,SuperU Andraharo,,true,1
+1,Foyer Malbouffe,diner,Ravitoto,8000.0,Achat requis (feuilles_manioc,porc) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:16 > nutrition:16,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,petit_dejeuner,Hen'omby ritra,8000.0,Achat requis (boeuf,ail) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:15 > nutrition:15,Shoprite Analakely,,true,1
+1,Foyer Malbouffe,dejeuner,Poulet grille legumes,8000.0,Achat requis (courgette,poivron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:14 > nutrition:14,SuperU Andraharo,,true,1
+1,Foyer Malbouffe,diner,Mofo gasy,1500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:18 > historique:7 > nutrition:7,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,petit_dejeuner,Kabaka,2000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:35/35 > budget:11 > historique:4 > nutrition:4,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,dejeuner,Mofo gasy,1500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:1 > historique:1 > nutrition:1,Epicerie Isotry,,true,1
+1,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+1,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Malgache,petit_dejeuner,Cereales lait,10000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:25 > historique:23 > nutrition:15,SuperU Andraharo,,true,0
+2,Foyer Malgache,dejeuner,Lasary voatabia,12500.0,Achat requis (tomate,citron) @ Shoprite Analakely | culture:35/35 > budget:18 > historique:15 > nutrition:10,Shoprite Analakely,,true,0
+2,Foyer Malgache,diner,Mofo gasy,7500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:7 > historique:4 > nutrition:2,Epicerie Isotry,,true,0
+2,Foyer Europeen,petit_dejeuner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:29 > nutrition:21,Shoprite Analakely,,true,0
+2,Foyer Europeen,dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:28 > nutrition:20,Shoprite Analakely,,true,0
+2,Foyer Europeen,diner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:27 > nutrition:19,Shoprite Analakely,,true,0
+2,Foyer Sans Porc,petit_dejeuner,Kitoza grille,25500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:30/35 > budget:30 > historique:27 > nutrition:21,SuperU Andraharo,,true,0
+2,Foyer Sans Porc,dejeuner,Cereales lait,6000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:30/35 > budget:26 > historique:23 > nutrition:17,SuperU Andraharo,,true,0
+2,Foyer Sans Porc,diner,Lasary voatabia,7500.0,Achat requis (tomate,citron) @ Epicerie Isotry | culture:30/35 > budget:19 > historique:15 > nutrition:10,Epicerie Isotry,,true,0
+2,Foyer Vegan,petit_dejeuner,Tsaramaso,8000.0,Stock suffisant | culture:11/35 > budget:11 > historique:8 > nutrition:7,,,false,0
+2,Foyer Vegan,dejeuner,Ravitoto aux champignons,11000.0,Stock suffisant | culture:11/35 > budget:11 > historique:7 > nutrition:6,,,false,0
+2,Foyer Vegan,diner,Lasary voatabia,5000.0,Achat requis (citron) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:6 > nutrition:5,Epicerie Isotry,,true,0
+2,Foyer Defaut,petit_dejeuner,Lasary voatabia,5000.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:24,SuperU Andraharo,,true,0
+2,Foyer Defaut,dejeuner,Tsaramaso,8000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:31 > nutrition:23,Epicerie Isotry,,true,0
+2,Foyer Defaut,diner,Kitoza grille,17000.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:30 > nutrition:22,SuperU Andraharo,,true,0
+2,Foyer Malbouffe,petit_dejeuner,Saosisy sy oeuf,5000.0,Achat requis (saucisse_porc) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:32 > nutrition:5,SuperU Andraharo,,true,0
+2,Foyer Malbouffe,dejeuner,Nuggets poulet,5500.0,Achat requis (chapelure) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:31 > nutrition:4,SuperU Andraharo,,true,0
+2,Foyer Malbouffe,diner,Chips et soda,2000.0,Achat requis (chips,soda) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:30 > nutrition:3,Shoprite Analakely,,true,0
+2,Foyer Malgache,petit_dejeuner,Cereales lait,10000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:25 > historique:23 > nutrition:15,SuperU Andraharo,,true,0
+2,Foyer Malgache,dejeuner,Lasary voatabia,12500.0,Achat requis (tomate,citron) @ Shoprite Analakely | culture:35/35 > budget:18 > historique:15 > nutrition:10,Shoprite Analakely,,true,0
+2,Foyer Malgache,diner,Mofo gasy,7500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:35/35 > budget:7 > historique:4 > nutrition:2,Epicerie Isotry,,true,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malgache,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Europeen,petit_dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:15 > nutrition:14,Shoprite Analakely,,true,1
+2,Foyer Europeen,dejeuner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:14 > nutrition:13,Shoprite Analakely,,true,1
+2,Foyer Europeen,diner,Salade composee,3500.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:13 > nutrition:12,SuperU Andraharo,,true,1
+2,Foyer Europeen,petit_dejeuner,Riz legumes sautes,4000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:12 > nutrition:11,Shoprite Analakely,,true,1
+2,Foyer Europeen,dejeuner,Omelette fromage,4000.0,Achat requis (fromage,beurre) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:11 > nutrition:10,SuperU Andraharo,,true,1
+2,Foyer Europeen,diner,Ravitoto aux champignons,5500.0,Achat requis (feuilles_manioc,champignon) @ Epicerie Isotry | culture:32/35 > budget:32 > historique:10 > nutrition:9,Epicerie Isotry,,true,1
+2,Foyer Europeen,petit_dejeuner,Henakisoa sy voatavo,7500.0,Achat requis (porc,courge) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:9 > nutrition:8,Shoprite Analakely,,true,1
+2,Foyer Europeen,dejeuner,Akoho gasy,7500.0,Achat requis (gingembre,ail) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:8 > nutrition:7,Shoprite Analakely,,true,1
+2,Foyer Europeen,diner,Ravitoto,8000.0,Achat requis (feuilles_manioc,porc) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:7 > nutrition:6,Shoprite Analakely,,true,1
+2,Foyer Europeen,petit_dejeuner,Hen'omby ritra,8000.0,Achat requis (boeuf,ail) @ Shoprite Analakely | culture:32/35 > budget:32 > historique:6 > nutrition:5,Shoprite Analakely,,true,1
+2,Foyer Europeen,dejeuner,Poulet grille legumes,8000.0,Achat requis (courgette,poivron) @ SuperU Andraharo | culture:32/35 > budget:32 > historique:5 > nutrition:4,SuperU Andraharo,,true,1
+2,Foyer Europeen,diner,Mofo gasy,1500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:32/35 > budget:32 > historique:4 > nutrition:3,Epicerie Isotry,,true,1
+2,Foyer Europeen,petit_dejeuner,Kabaka,2000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:32/35 > budget:32 > historique:3 > nutrition:2,Epicerie Isotry,,true,1
+2,Foyer Europeen,dejeuner,Yaourt fruits,2500.0,Achat requis (yaourt,banane,mangue) @ Epicerie Isotry | culture:32/35 > budget:29 > historique:2 > nutrition:1,Epicerie Isotry,,true,1
+2,Foyer Europeen,diner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:20 > historique:20 > nutrition:14,Shoprite Analakely,,true,1
+2,Foyer Europeen,petit_dejeuner,Lasary voatabia,2500.0,Achat requis (citron) @ Shoprite Analakely | culture:32/35 > budget:9 > historique:9 > nutrition:7,Shoprite Analakely,,true,1
+2,Foyer Europeen,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Europeen,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Europeen,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Europeen,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,1
+2,Foyer Sans Porc,petit_dejeuner,Kitoza grille,25500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:30/35 > budget:30 > historique:26 > nutrition:20,SuperU Andraharo,,true,0
+2,Foyer Sans Porc,dejeuner,Cereales lait,6000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:30/35 > budget:26 > historique:22 > nutrition:16,SuperU Andraharo,,true,0
+2,Foyer Sans Porc,diner,Lasary voatabia,7500.0,Achat requis (tomate,citron) @ Epicerie Isotry | culture:30/35 > budget:19 > historique:14 > nutrition:9,Epicerie Isotry,,true,0
+2,Foyer Sans Porc,petit_dejeuner,Mofo gasy,4500.0,Achat requis (farine_riz,levure,sucre) @ Epicerie Isotry | culture:30/35 > budget:11 > historique:8 > nutrition:5,Epicerie Isotry,,true,0
+2,Foyer Sans Porc,dejeuner,Kabaka,6000.0,Achat requis (mais,sucre,lait) @ Epicerie Isotry | culture:30/35 > budget:5 > historique:3 > nutrition:1,Epicerie Isotry,,true,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Sans Porc,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,Tsaramaso,8000.0,Stock suffisant | culture:11/35 > budget:11 > historique:7 > nutrition:6,,,false,0
+2,Foyer Vegan,dejeuner,Ravitoto aux champignons,11000.0,Stock suffisant | culture:11/35 > budget:11 > historique:6 > nutrition:5,,,false,0
+2,Foyer Vegan,diner,Lasary voatabia,5000.0,Achat requis (citron) @ Epicerie Isotry | culture:11/35 > budget:11 > historique:5 > nutrition:4,Epicerie Isotry,,true,0
+2,Foyer Vegan,petit_dejeuner,Smoothie vert,6000.0,Achat requis (epinard) @ Epicerie Isotry | culture:11/35 > budget:5 > historique:3 > nutrition:2,Epicerie Isotry,,true,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Vegan,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,petit_dejeuner,Lasary voatabia,5000.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:30 > nutrition:22,SuperU Andraharo,,true,0
+2,Foyer Defaut,dejeuner,Tsaramaso,8000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:29 > nutrition:21,Epicerie Isotry,,true,0
+2,Foyer Defaut,diner,Kitoza grille,17000.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:28 > nutrition:20,SuperU Andraharo,,true,0
+2,Foyer Defaut,petit_dejeuner,Cereales lait,4000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:27 > nutrition:19,SuperU Andraharo,,true,0
+2,Foyer Defaut,dejeuner,Salade composee,7000.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:35/35 > budget:31 > historique:23 > nutrition:15,SuperU Andraharo,,true,0
+2,Foyer Defaut,diner,Riz legumes sautes,8000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:35/35 > budget:16 > historique:10 > nutrition:6,Shoprite Analakely,,true,0
+2,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Defaut,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,0
+2,Foyer Malbouffe,petit_dejeuner,Saosisy sy oeuf,5000.0,Achat requis (saucisse_porc) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:25 > nutrition:8,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,dejeuner,Nuggets poulet,5500.0,Achat requis (chapelure) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:24 > nutrition:7,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,diner,Chips et soda,2000.0,Achat requis (chips,soda) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:23 > nutrition:6,Shoprite Analakely,,true,2
+2,Foyer Malbouffe,petit_dejeuner,Frites mayo,3500.0,Achat requis (pomme_de_terre,mayonnaise) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:22 > nutrition:5,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,dejeuner,Pizza fromage,6000.0,Achat requis (farine,fromage) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:21 > nutrition:4,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,diner,Pain beurre confiture,2000.0,Achat requis (pain,beurre,confiture) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:20 > nutrition:3,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,petit_dejeuner,Hot dog,4500.0,Achat requis (pain,saucisse_porc,moutarde) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:19 > nutrition:2,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,dejeuner,Burger classic,7000.0,Achat requis (pain,boeuf,fromage,sauce) @ Shoprite Analakely | culture:35/35 > budget:35 > historique:18 > nutrition:1,Shoprite Analakely,,true,2
+2,Foyer Malbouffe,diner,Lasary voatabia,2500.0,Achat requis (citron) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:17 > nutrition:17,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,petit_dejeuner,Tsaramaso,4000.0,Achat requis (haricot) @ Epicerie Isotry | culture:35/35 > budget:35 > historique:16 > nutrition:16,Epicerie Isotry,,true,2
+2,Foyer Malbouffe,dejeuner,Kitoza grille,8500.0,Achat requis (boeuf_seche) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:15 > nutrition:15,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,diner,Cereales lait,2000.0,Achat requis (cereales,lait) @ SuperU Andraharo | culture:35/35 > budget:35 > historique:14 > nutrition:14,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,petit_dejeuner,Salade composee,3500.0,Achat requis (laitue,concombre) @ SuperU Andraharo | culture:35/35 > budget:28 > historique:10 > nutrition:10,SuperU Andraharo,,true,2
+2,Foyer Malbouffe,dejeuner,Riz legumes sautes,4000.0,Achat requis (carotte,haricot_vert) @ Shoprite Analakely | culture:35/35 > budget:14 > historique:4 > nutrition:4,Shoprite Analakely,,true,2
+2,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,petit_dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,dejeuner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance,,,false,2
+2,Foyer Malbouffe,diner,ECHEC_ARBITRAGE,0.0,Budget insuffisant meme avec tolerance | ALERTE nutrition + salle: Dojo Mahamasina (chemin=20.801194887159518),,Dojo Mahamasina (chemin=20.801194887159518),false,2

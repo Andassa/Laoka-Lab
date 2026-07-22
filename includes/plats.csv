@@ -1,0 +1,36 @@
+nom_plat,ingredients,cout_estime,categorie_nutritionnelle,contient_porc,allergenes,vegan
+Ravitoto,feuilles_manioc;porc;huile,8000,equilibre,true,,false
+Romazava,brede;boeuf;tomate;ail,7000,equilibre,false,,false
+Vary amin anana,riz;brede;crevette,6500,equilibre,false,fruits_de_mer,false
+Akoho sy voanio,poulet;lait_coco;gingembre,9000,equilibre,false,,false
+Henakisoa sy voatavo,porc;courge;oignon,7500,equilibre,true,,false
+Tsaramaso,haricot;tomate;oignon,4000,equilibre,false,,true
+Lasary voatabia,tomate;oignon;citron,2500,equilibre,false,,true
+Mofo gasy,farine_riz;levure;sucre,1500,equilibre,false,,true
+Kitoza grille,boeuf_seche;huile,8500,equilibre,false,,false
+Ravitoto aux champignons,feuilles_manioc;champignon;huile,5500,equilibre,false,,true
+Hen'omby ritra,boeuf;tomate;ail,8000,equilibre,false,,false
+Akoho gasy,poulet;gingembre;ail;huile,7500,equilibre,false,,false
+Trondro sy voanio,poisson;lait_coco;curcuma,8500,equilibre,false,fruits_de_mer,false
+Saosisy sy oeuf,saucisse_porc;oeuf;huile,5000,malbouffe,true,oeuf,false
+Pizza fromage,farine;fromage;tomate,6000,malbouffe,false,lactose,false
+Burger classic,pain;boeuf;fromage;sauce,7000,malbouffe,false,lactose;gluten,false
+Frites mayo,pomme_de_terre;huile;mayonnaise,3500,malbouffe,false,oeuf,false
+Nuggets poulet,poulet;chapelure;huile,5500,malbouffe,false,gluten,false
+Hot dog,pain;saucisse_porc;moutarde,4500,malbouffe,true,gluten,false
+Chips et soda,chips;soda,2000,malbouffe,false,,true
+Salade composee,laitue;tomate;concombre;huile,3500,equilibre,false,,true
+Riz legumes sautes,riz;carotte;haricot_vert;huile,4000,equilibre,false,,true
+Poulet grille legumes,poulet;courgette;poivron,8000,equilibre,false,,false
+Poisson grille,poisson;citron;persil,7500,equilibre,false,fruits_de_mer,false
+Soupe de legumes,carotte;poireau;pomme_de_terre,3000,equilibre,false,,true
+Pasta pesto,pates;basilic;huile_olive,5000,equilibre,false,gluten,true
+Tofu saute,tofu;soja;brocoli,4500,equilibre,false,soja,true
+Omelette fromage,oeuf;fromage;beurre,4000,equilibre,false,oeuf;lactose,false
+Yaourt fruits,yaourt;banane;mangue,2500,equilibre,false,lactose,false
+Pain beurre confiture,pain;beurre;confiture,2000,malbouffe,false,gluten;lactose,false
+Cereales lait,cereales;lait,2000,equilibre,false,lactose;gluten,false
+Smoothie vert,epinard;banane;lait_coco,3000,equilibre,false,,true
+Brochettes zebu,boeuf;oignon;poivron,9000,equilibre,false,,false
+Kabaka,mais;sucre;lait,2000,equilibre,false,lactose,false
+Voanjobory,pois_du_cap;porc;feuille_brede,6500,equilibre,true,,false
