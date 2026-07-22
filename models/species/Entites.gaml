@@ -25,23 +25,27 @@ species ingredient_stock {
 
 species magasin {
 	string nom <- "";
+	string label_carte <- "";
 	string type_magasin <- "epicerie_locale";
 	list produits_disponibles <- [];
 	map prix <- [];
 	image_file icone <- image_file("../includes/icons/magasin.png");
 
 	aspect base {
-		draw icone size: 9.0;
-		draw nom color: #black size: 8 at: location + {0.0, -7.0};
+		draw circle(3.2) color: #orange border: #black;
+		draw icone size: 5.5;
+		draw label_carte color: #black size: 10 at: location + {0.0, 4.8};
 	}
 }
 
 species salle_de_sport {
 	string nom <- "";
+	string label_carte <- "";
 	image_file icone <- image_file("../includes/icons/salle_sport.png");
 
 	aspect base {
-		draw icone size: 9.0;
-		draw nom color: #darkgreen size: 8 at: location + {0.0, -7.0};
+		draw circle(3.2) color: #lightgreen border: #darkgreen;
+		draw icone size: 5.5;
+		draw label_carte color: #darkgreen size: 10 at: location + {0.0, 4.8};
 	}
 }

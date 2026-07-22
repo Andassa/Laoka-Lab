@@ -310,8 +310,7 @@ species agent_logistique parent: agent_decision {
 					plen <- chemin.shape.perimeter;
 				}
 			}
-			mon_foyer.derniere_salle_sport <- s.nom + " (chemin=" + plen + ")";
-			write "[Alerte nutrition] " + mon_foyer.nom_foyer + " -> " + mon_foyer.derniere_salle_sport;
+			mon_foyer.derniere_salle_sport <- s.nom + " (d=" + int(plen) + ")";
 		}
 	}
 }
@@ -514,6 +513,7 @@ species agent_arbitrage parent: agent_decision {
 /* ========== Household (apres les agents qu'il reference) ========== */
 species household {
 	string nom_foyer <- "Foyer";
+	string label_carte <- "Foyer";
 	string storage_mode <- "etalage";
 	int nb_personnes <- 1;
 	float budget_periode <- 50000.0;
@@ -623,19 +623,24 @@ species household {
 	}
 
 	aspect base {
+		rgb halo <- #steelblue;
 		image_file ic <- icone_defaut;
 		if regime = "vegan" {
 			ic <- icone_vegan;
+			halo <- #seagreen;
 		} else if regime = "malbouffe_assumee" {
 			ic <- icone_malbouffe;
+			halo <- #tomato;
 		} else if ("pas_de_porc" in restrictions_culturelles) {
 			ic <- icone_culture;
+			halo <- #mediumpurple;
 		}
-		draw ic size: 8.5;
-		draw nom_foyer color: #black size: 9 at: location + {0.0, -8.0};
+		draw circle(3.4) color: halo border: #black;
+		draw ic size: 5.5;
+		draw label_carte color: #black size: 10 at: location + {0.0, 4.8};
 		if alertes_nutritionnelles > 0 {
-			draw circle(2.2) color: #red at: location + {4.5, -4.5};
-			draw ("!" + alertes_nutritionnelles) color: #white size: 10 at: location + {4.5, -4.5};
+			draw circle(1.6) color: #red border: #white at: location + {3.2, -3.0};
+			draw string(alertes_nutritionnelles) color: #white size: 9 at: location + {3.2, -3.0};
 		}
 	}
 }

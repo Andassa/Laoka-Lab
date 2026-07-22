@@ -59,18 +59,22 @@ Chaque `household` possède **ses propres** instances de ces agents (pas un seul
 ```text
 LaokaLab/
 ├── models/
-│   ├── LaokaLab.gaml          # Point d’entrée : global, init, experiments
+│   ├── LaokaLab.gaml              # Point d'entrée (~100 lignes) : params, init, UI
+│   ├── global/
+│   │   ├── InitMonde.gaml         # Catalogue, magasins, salles, personas, réseau
+│   │   └── CycleSimu.gaml         # Reflex de cycle + export CSV
 │   └── species/
-│       ├── Entites.gaml       # plat_item, stock, magasin, salle_de_sport
-│       └── Agents.gaml        # pipeline de décision + household
+│       ├── Entites.gaml           # plat, stock, magasin, salle_de_sport
+│       └── Agents.gaml            # Pipeline de décision + household
 ├── includes/
-│   ├── plats.csv              # Catalogue de plats
-│   └── icons/                 # Icônes PNG (+ SVG source) pour la carte
-├── results/                   # Exports CSV de simulation
-├── .project                   # Projet Eclipse / GAMA
+│   ├── plats.csv
+│   └── icons/
+├── results/
 └── README.md
 ```
 
+**Règle :** ouvrir toujours `models/LaokaLab.gaml` dans GAMA (pas les modules seuls).
+Les imports forment un DAG : `Entites` → `Agents` → `InitMonde` / `CycleSimu` → `LaokaLab`.
 ---
 
 ## Affichage (icônes)
