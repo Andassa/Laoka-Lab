@@ -74,7 +74,7 @@ Carte : **shapefile OSM** + points agents (légende sur la carte).
 | `ScenarioBudgetPersist` | Budget sans recharge |
 | `ScenarioPipelineClassique` | Ancien pipeline + reset (baseline) |
 
-### Headless
+### Headless (local)
 
 ```bash
 /Applications/Gama.app/Contents/headless/gama-headless.sh \
@@ -82,6 +82,20 @@ Carte : **shapefile OSM** + points agents (légende sur la carte).
   -batch ScenarioBase \
   "/chemin/vers/LaokaLab/models/LaokaLab.gaml"
 ```
+
+### Docker + CI (recommandé pour batchs)
+
+Sans installer GAMA IDE — image officielle `gamaplatform/gama:2025.06.4` :
+
+```bash
+cd LaokaLab
+docker compose build
+./scripts/run-docker-batches.sh all    # 4 scenarios + CSV archives
+# ou : docker compose run --rm scenario-base
+```
+
+Détails : **[DOCKER.md](DOCKER.md)**  
+CI : `.github/workflows/batch-docker.yml` (ScenarioBase à chaque push pertinent).
 
 ---
 
@@ -96,7 +110,10 @@ LaokaLab/
 │   └── species/Agents.gaml + Entites.gaml
 ├── includes/plats.csv, icons/, gis/
 ├── results/                    # CSV de sortie
-├── RESULTATS.md                # Synthèse pour mémoire / soutenance
+├── scripts/run-docker-batches.sh
+├── Dockerfile / docker-compose.yml
+├── DOCKER.md
+├── RESULTATS.md
 └── README.md
 ```
 
@@ -126,7 +143,8 @@ Plan 10/40 | stock 58% | malbouffe 7% | budg rest 5166 | rejet cult 15% | rejet 
 
 ## Prérequis
 
-- [GAMA Platform](https://gama-platform.org/) 2025.6+
+- [GAMA Platform](https://gama-platform.org/) 2025.6+ (UI / démo)
+- **ou** Docker Desktop (batchs / CI) — voir [DOCKER.md](DOCKER.md)
 - Java fourni avec GAMA
 
 ## Auteur

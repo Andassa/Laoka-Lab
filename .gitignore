@@ -13,5 +13,16 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Gros exports locaux (garder le sample)
+# Exports de runs (regeneres par UI / headless / Docker)
 results/arbitrage_log.csv
+results/conflits_log.csv
+results/docker/
+results/scenarios/*.csv
+
+# Workspace GAMA headless temporaire
+gama_ws/
+tmp/
+*.tmp
+
+# Docker local
+.docker/

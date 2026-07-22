@@ -1,0 +1,76 @@
+# Laoka Lab — orchestration batch GAMA (headless)
+# Usage :
+#   docker compose run --rm scenario-base
+#   docker compose run --rm scenario-pipeline
+#   ./scripts/run-docker-batches.sh all
+
+name: laokalab
+
+x-gama-common: &gama-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+    args:
+      GAMA_VERSION: "2025.06.4"
+  image: laokalab-gama:2025.06.4
+  platform: linux/amd64
+  working_dir: /work
+  volumes:
+    # Monter le projet pour ecrire les CSV sur l'hote
+    - ./:/work
+  environment:
+    GAMA_MEMORY: "4096m"
+  # Sur Mac Apple Silicon : emulation amd64 (image GAMA officielle = amd64)
+  mem_limit: 6g
+
+services:
+  # Build seul (utile avant CI locale)
+  build-image:
+    <<: *gama-common
+    profiles: ["build"]
+    entrypoint: ["echo"]
+    command: ["Image laokalab-gama prete"]
+
+  scenario-base:
+    <<: *gama-common
+    command:
+      - "-m"
+      - "4096m"
+      - "-ws"
+      - "/tmp/gama_ws"
+      - "-batch"
+      - "ScenarioBase"
+      - "/work/models/LaokaLab.gaml"
+
+  scenario-seuil:
+    <<: *gama-common
+    command:
+      - "-m"
+      - "4096m"
+      - "-ws"
+      - "/tmp/gama_ws"
+      - "-batch"
+      - "ScenarioSeuilStrict"
+      - "/work/models/LaokaLab.gaml"
+
+  scenario-persist:
+    <<: *gama-common
+    command:
+      - "-m"
+      - "4096m"
+      - "-ws"
+      - "/tmp/gama_ws"
+      - "-batch"
+      - "ScenarioBudgetPersist"
+      - "/work/models/LaokaLab.gaml"
+
+  scenario-pipeline:
+    <<: *gama-common
+    command:
+      - "-m"
+      - "4096m"
+      - "-ws"
+      - "/tmp/gama_ws"
+      - "-batch"
+      - "ScenarioPipelineClassique"
+      - "/work/models/LaokaLab.gaml"

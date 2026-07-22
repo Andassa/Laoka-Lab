@@ -1,0 +1,14 @@
+# Contexte Docker — ne pas gonfler l'image
+.git
+.github
+.metadata
+.cache
+.settings
+.venv
+**/__pycache__
+**/*.pyc
+.DS_Store
+*.log
+results/arbitrage_log.csv
+results/conflits_log.csv
+results/docker/

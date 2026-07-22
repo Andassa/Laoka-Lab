@@ -1,0 +1,85 @@
+name: Batch Docker GAMA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "models/**"
+      - "includes/**"
+      - "Dockerfile"
+      - "docker-compose.yml"
+      - "scripts/run-docker-batches.sh"
+      - ".github/workflows/batch-docker.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "models/**"
+      - "includes/**"
+      - "Dockerfile"
+      - "docker-compose.yml"
+      - "scripts/**"
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: "Scenario a lancer (base|seuil|persist|pipeline|all)"
+        required: true
+        default: "base"
+        type: choice
+        options:
+          - base
+          - seuil
+          - persist
+          - pipeline
+          - all
+
+concurrency:
+  group: laokalab-batch-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  batch:
+    name: GAMA headless (${{ github.event.inputs.scenario || 'base' }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build image Laoka Lab
+        run: docker compose build
+
+      - name: Prepare results dirs
+        run: mkdir -p results results/scenarios results/docker
+
+      - name: Run ScenarioBase (CI rapide)
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.scenario == 'base' }}
+        run: |
+          docker compose run --rm scenario-base
+          mkdir -p results/docker/ci-base
+          cp -f results/arbitrage_log.csv results/docker/ci-base/ 2>/dev/null || true
+          cp -f results/conflits_log.csv results/docker/ci-base/ 2>/dev/null || true
+          test -f results/conflits_log.csv
+          echo "=== Tail conflits ==="
+          tail -n 5 results/conflits_log.csv
+
+      - name: Run scenario manuel (workflow_dispatch)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.scenario != 'base' }}
+        run: |
+          chmod +x scripts/run-docker-batches.sh
+          ./scripts/run-docker-batches.sh "${{ github.event.inputs.scenario }}"
+
+      - name: Upload CSV artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: laokalab-results-${{ github.run_id }}
+          path: |
+            results/arbitrage_log.csv
+            results/conflits_log.csv
+            results/docker/**
+          if-no-files-found: warn
+          retention-days: 14
