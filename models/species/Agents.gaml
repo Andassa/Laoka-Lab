@@ -32,6 +32,8 @@ global {
 	float poids_nutrition <- 1.0;
 	float poids_stock <- 1.2;
 	float poids_historique <- 0.8;
+	/* Part du salaire reservee (non depensable pour les repas). */
+	float ratio_epargne_min <- 0.08;
 	/* Metriques de conflit (cumul du plan courant). */
 	int rejets_culture_plan <- 0;
 	int rejets_budget_plan <- 0;
@@ -199,9 +201,36 @@ species agent_provisions parent: agent_decision {
 		}
 		return total;
 	}
+
+	/* Vote soft : +1 si stock OK, penalite par ingredient manquant. */
+	float voter_plat (plat_item pi) {
+		int nb_manques <- 0;
+		loop ing over: pi.ingredients {
+			if quantite_dispo(ing) < 1.0 {
+				nb_manques <- nb_manques + 1;
+			}
+		}
+		if nb_manques = 0 {
+			return 1.0;
+		}
+		return 0.0 - (0.25 * nb_manques);
+	}
 }
 
 species agent_budget parent: agent_decision {
+
+	/* Vote soft : favorise les plats sous enveloppe. */
+	float voter_plat (plat_item pi, float enveloppe) {
+		float cout <- pi.cout_estime * mon_foyer.nb_personnes;
+		float plafond_souple <- enveloppe * (1.0 + tolerance_depassement_budget);
+		if cout <= enveloppe {
+			return 1.0 - (cout / (enveloppe + 1.0));
+		}
+		if cout <= plafond_souple {
+			return 0.15;
+		}
+		return -1.5;
+	}
 
 	list filtrer_budget (list candidats, float budget_dispo, int personnes) {
 		list ok <- [];
@@ -317,9 +346,30 @@ species agent_nutrition parent: agent_decision {
 	action reset_compteur {
 		compteur_malbouffe_periode <- 0;
 	}
+
+	/* Vote soft : pousse equilibre (ou malbouffe si regime assume). */
+	float voter_plat (plat_item pi) {
+		if mon_foyer.regime = "malbouffe_assumee" {
+			if pi.categorie_nutritionnelle = "malbouffe" {
+				return 1.0;
+			}
+			return 0.25;
+		}
+		if pi.categorie_nutritionnelle = "equilibre" {
+			return 1.0;
+		}
+		return -0.6;
+	}
 }
 
 species agent_historique parent: agent_decision {
+
+	float voter_plat (plat_item pi, list interdits) {
+		if liste_contient(interdits, pi.nom_plat) {
+			return -1.0;
+		}
+		return 0.4;
+	}
 
 	list eviter_repetitions (list candidats) {
 		list interdits <- [];
@@ -423,7 +473,10 @@ species agent_arbitrage parent: agent_decision {
 		loop i from: 0 to: n - 1 {
 			string type_r <- world.calculer_type_repas(i);
 			int repas_restants <- n - i;
-			float enveloppe <- mon_foyer.budget_restant / repas_restants;
+			if repas_restants < 1 {
+				repas_restants <- 1;
+			}
+			float enveloppe <- mon_foyer.budget_spendable() / repas_restants;
 			map repas_genere <- selectionner_un_repas(type_r, enveloppe);
 			mon_foyer.plan_courant <- mon_foyer.plan_courant + [repas_genere];
 			if bool(repas_genere["achat_necessaire"]) {
@@ -612,47 +665,28 @@ species agent_arbitrage parent: agent_decision {
 	}
 
 	float score_negociation (plat_item pi, float enveloppe, list interdits) {
-		float s <- 0.0;
-		float cout <- pi.cout_estime * mon_foyer.nb_personnes;
-		float plafond_souple <- enveloppe * (1.0 + tolerance_depassement_budget);
-		if cout <= enveloppe {
-			s <- s + poids_budget * (1.0 - (cout / (enveloppe + 1.0)));
-		} else if cout <= plafond_souple {
-			s <- s + poids_budget * 0.15;
-		} else {
-			s <- s - poids_budget * 1.5;
+		/* Negociation SMA : chaque agent soft vote via ask, l'arbitrage ponder. */
+		float vote_b <- 0.0;
+		float vote_n <- 0.0;
+		float vote_h <- 0.0;
+		float vote_s <- 0.0;
+		ask mon_foyer.mon_budget {
+			vote_b <- voter_plat(pi, enveloppe);
 		}
-		if liste_contient(interdits, pi.nom_plat) {
-			s <- s - poids_historique;
+		ask mon_foyer.mon_nutrition {
+			vote_n <- voter_plat(pi);
+		}
+		ask mon_foyer.mon_historique {
+			vote_h <- voter_plat(pi, interdits);
+		}
+		ask mon_foyer.mon_provisions {
+			vote_s <- voter_plat(pi);
+		}
+		if vote_h < 0.0 {
 			evitements_hist_plan <- evitements_hist_plan + 1;
-		} else {
-			s <- s + poids_historique * 0.4;
 		}
-		if mon_foyer.regime = "malbouffe_assumee" {
-			if pi.categorie_nutritionnelle = "malbouffe" {
-				s <- s + poids_nutrition;
-			} else {
-				s <- s + poids_nutrition * 0.25;
-			}
-		} else {
-			if pi.categorie_nutritionnelle = "equilibre" {
-				s <- s + poids_nutrition;
-			} else {
-				s <- s - poids_nutrition * 0.6;
-			}
-		}
-		int nb_manques <- 0;
-		loop ing over: pi.ingredients {
-			if mon_foyer.mon_provisions.quantite_dispo(ing) < 1.0 {
-				nb_manques <- nb_manques + 1;
-			}
-		}
-		if nb_manques = 0 {
-			s <- s + poids_stock;
-		} else {
-			s <- s - poids_stock * (0.25 * nb_manques);
-		}
-		return s;
+		return (poids_budget * vote_b) + (poids_nutrition * vote_n)
+			+ (poids_historique * vote_h) + (poids_stock * vote_s);
 	}
 
 	list trier_evals_par_cout (list evals) {
@@ -743,6 +777,7 @@ species household {
 	int nb_personnes <- 1;
 	float budget_periode <- 50000.0;
 	float budget_restant <- 50000.0;
+	string quartier_nom <- "";
 	list restrictions_culturelles <- [];
 	list allergies <- [];
 	string regime <- "aucun";
@@ -855,12 +890,22 @@ species household {
 		return total;
 	}
 
+	/* Budget depensable = hors reserve d'epargne (ratio du salaire/periode). */
+	float budget_spendable {
+		float plancher <- budget_periode * ratio_epargne_min;
+		float dispo <- budget_restant - plancher;
+		if dispo < 0.0 {
+			return 0.0;
+		}
+		return dispo;
+	}
+
 	action demander_plan {
 		mission <- "repos";
 		if activer_deplacement {
 			location <- position_maison;
 		}
-		/* Gestion budget entre periodes. */
+		/* Gestion budget entre periodes : budget_periode = allocation / salaire. */
 		if mode_budget = "reset" {
 			budget_restant <- budget_periode;
 		} else if mode_budget = "revenu" {
@@ -951,8 +996,8 @@ species household {
 				halo <- #gray;
 			}
 		}
-		draw circle(3.4) color: halo border: #black;
-		if afficher_icones {
+		draw circle(taille_symbole * 1.15) color: halo border: #black;
+		if afficher_icones and !utiliser_gis {
 			image_file ic <- icone_defaut;
 			if regime = "vegan" {
 				ic <- icone_vegan;
@@ -961,17 +1006,17 @@ species household {
 			} else if ("pas_de_porc" in restrictions_culturelles) {
 				ic <- icone_culture;
 			}
-			draw ic size: 5.5;
+			draw ic size: taille_icone;
 		}
-		draw label_carte color: #black size: 10 at: location + {0.0, 5.2};
+		draw label_carte color: #black size: 12 at: location + {0.0, offset_label};
 		/* Badge alerte : carre lisible (le petit cercle coupait les chiffres). */
 		if alertes_nutritionnelles > 0 {
-			point bp <- location + {5.5, -4.5};
+			point bp <- location + {taille_symbole * 1.8, -taille_symbole * 1.5};
 			string txt_alerte <- "" + alertes_nutritionnelles;
 			if alertes_nutritionnelles > 99 {
 				txt_alerte <- "99+";
 			}
-			draw square(5.0) color: #red border: #white at: bp;
+			draw square(taille_symbole * 1.6) color: #red border: #white at: bp;
 			draw txt_alerte color: #white size: 11 at: bp;
 		}
 	}

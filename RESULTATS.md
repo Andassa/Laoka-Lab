@@ -93,14 +93,22 @@ Comparer éventuellement un run `ScenarioPipelineClassique` pour le contraste.
 
 ## 6. Limites (à mentionner)
 
-- Quartier spatial **abstrait** (pas encore de GIS Antananarivo)
+- Quartiers **et** shapefile OSM centre Antananarivo (`includes/gis/antananarivo_roads.shp`, 1136 routes, ODbL)
 - Catalogue de **35 plats** (échantillon)
 - Pas de périssabilité fine des stocks
-- Messages GAMA entre agents non utilisés (négociation via **scores** dans l’arbitrage)
+- Négociation via **votes `ask` + scores** (pas de protocole FIPA complet)
 
 ---
 
-## 7. Conclusion projet
+## 7. Évolutions post-valorisation
+
+- Votes agents soft (`voter_plat`) collectés par `ask` dans l’arbitrage
+- Plancher d’épargne (`ratio_epargne_min`, défaut 8 %) : budget dépensable hors réserve
+- Carte avec 6 quartiers nommés (Analakely, Isotry, Andraharo, Antaninarenina, Mahamasina, Ivandry)
+
+---
+
+## 8. Conclusion projet
 
 Le laboratoire SMA atteint son objectif : **montrer et mesurer** comment provisions, budget, culture, nutrition, historique et logistique co-construisent un plan de repas.  
-La version scores + budget revenu est la configuration de référence recommandée pour la démo et le mémoire.
+La version scores + budget revenu (+ épargne min) est la configuration de référence recommandée pour la démo et le mémoire.

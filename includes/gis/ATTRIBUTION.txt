@@ -1,0 +1,6 @@
+OpenStreetMap roads extract for Antananarivo (centre).
+Data (c) OpenStreetMap contributors, ODbL 1.0.
+https://www.openstreetmap.org/copyright
+Extract via Overpass API (lz4.overpass-api.de), converted to ESRI Shapefile.
+Features: 1136 highway ways.
+BBox WGS84: lon [47.508079, 47.555592] lat [-18.937491, -18.884359]

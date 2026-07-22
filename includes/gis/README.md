@@ -1,22 +1,28 @@
-# GIS Antananarivo (optionnel)
+# GIS Antananarivo
 
-Laoka Lab fonctionne **sans** carte GIS réelle (quartier abstrait 100×100).
+## Fichier inclus
 
-## Pourquoi ce n’est pas inclus par défaut
+| Fichier | Rôle |
+|---|---|
+| `antananarivo_roads.shp` (+ `.shx`, `.dbf`, `.prj`, `.cpg`) | **1136 routes** OSM (centre d’Antananarivo) |
+| `ATTRIBUTION.txt` | Licence ODbL / sources |
 
-- Aucun shapefile / GeoJSON n’est fourni dans le dépôt.
-- Le cœur scientifique = arbitrage de contraintes repas, pas la mobilité urbaine.
-- Une carte réelle ajoute des dépendances (projection, chemins, données OpenStreetMap…).
+- **CRS** : WGS84 (EPSG:4326)  
+- **BBox** : lon ≈ 47.51–47.56, lat ≈ −18.94–−18.88  
+- **Source** : OpenStreetMap via Overpass API, converti en shapefile ESRI  
+- **Licence** : © OpenStreetMap contributors — [ODbL](https://www.openstreetmap.org/copyright)
 
-## Comment l’ajouter plus tard
+## Dans Laoka Lab
 
-1. Exporter un quartier d’Antananarivo (routes / bâtiments) en shapefile ou geojson.
-2. Placer les fichiers ici, ex. :
-   - `includes/gis/antanana_routes.shp` (+ `.dbf`, `.shx`, `.prj`)
-3. Dans `InitMonde.gaml`, charger via GAMA :
-   - `shape_file` / `file` + `create` d’agents sur les géométries
-4. Repositionner magasins / salles / foyers sur ce fond.
+- Paramètre UI **`Utiliser GIS OSM`** (défaut ON)  
+- Les agents `route` sont créés depuis le shapefile  
+- Magasins / salles / foyers placés en coordonnées WGS84 (quartiers réels)  
+- Si GIS OFF → carte abstraite 100×100 + quartiers stylisés
 
-## En attendant
+## Mettre à jour / élargir
 
-Le graphe `as_distance_graph` actuel suffit pour démontrer la **logistique** (magasin / salle les plus proches).
+1. Re-télécharger un extrait Overpass (ou Geofabrik Madagascar découpé)  
+2. Remplacer `antananarivo_roads.*`  
+3. Relancer `LaokaLab.gaml`
+
+Geofabrik national (lourd) : https://download.geofabrik.de/africa/madagascar.html  

@@ -31,16 +31,19 @@ Compatible **GAMA Platform 2025.6+**.
 | Magasin / salle | `agent_logistique` | Spatial |
 | Synthèse | `agent_arbitrage` | Scores pondérés |
 
-Chaque `household` a **ses propres** instances d’agents.
+Chaque `household` a **ses propres** instances d’agents. En mode scores, l’arbitrage **demande un vote** (`ask` + `voter_plat`) à budget / nutrition / historique / provisions, puis pondère.
 
 ### Modes importants
 
 | Paramètre | Valeurs | Effet |
 |---|---|---|
 | `mode_budget` | `revenu` / `reset` / `persist` | Report + allocation / recharge totale / jamais |
-| `utiliser_negociation_scores` | true / false | Scores vs ancien pipeline séquentiel |
+| `ratio_epargne_min` | 0–0.30 (défaut 0.08) | Plancher non dépensable (= % du salaire/période) |
+| `utiliser_negociation_scores` | true / false | Votes pondérés vs ancien pipeline séquentiel |
 | `nb_plans_max` | 10–100 | Arrêt automatique |
 | `activer_deplacement` | true / false | Animation magasin/salle (démo) |
+
+Carte : **shapefile OSM** `includes/gis/antananarivo_roads.shp` (1136 routes, centre Tana, ODbL). Paramètre `utiliser_gis` (défaut ON).
 
 ---
 

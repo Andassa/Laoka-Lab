@@ -28,10 +28,23 @@ global {
 	float poids_nutrition <- 1.0;
 	float poids_stock <- 1.2;
 	float poids_historique <- 0.8;
+	float ratio_epargne_min <- 0.08;
+	bool utiliser_gis <- true;
+
+	/* Shapefile OSM Antananarivo (routes) — ODbL, voir includes/gis/ATTRIBUTION.txt */
+	shape_file fichier_routes <- shape_file("../includes/gis/antananarivo_roads.shp");
+	geometry shape <- envelope(fichier_routes);
 
 	household foyer_selectionne;
 
 	init {
+		if utiliser_gis {
+			create route from: fichier_routes;
+			write "GIS OSM : " + length(route) + " routes chargees (Antananarivo centre)";
+		} else {
+			shape <- square(100.0);
+			write "GIS OFF : carte abstraite 100x100";
+		}
 		do charger_plats;
 		do creer_environnement;
 		do creer_personas;
@@ -48,7 +61,13 @@ global {
 			+ length(magasin) + " magasins, " + length(catalogue_plats) + " plats ===";
 		write "Budget=" + mode_budget + " | Scores="
 			+ (utiliser_negociation_scores ? "ON" : "OFF")
+			+ " | Epargne min=" + int(ratio_epargne_min * 100) + "%"
+			+ " | GIS=" + (utiliser_gis ? "ON" : "OFF")
 			+ " | Arret @" + nb_plans_max + " plans";
+		write ">>> Regarde la fenetre CARTE : points orange=magasins, vert=salles, colores=foyers";
+		ask household {
+			write "  - " + nom_foyer + " @ " + location;
+		}
 	}
 
 	int calculer_nb_repas {
@@ -79,26 +98,55 @@ experiment LaokaLabUI type: gui {
 	parameter "Nb plans max" var: nb_plans_max min: 10 max: 100 category: "Simulation";
 	parameter "Pas entre plans" var: pas_entre_plans min: 5 max: 60 category: "Simulation";
 	parameter "Mode budget" var: mode_budget among: ["revenu", "reset", "persist"] category: "Budget";
+	parameter "Epargne min (ratio)" var: ratio_epargne_min min: 0.0 max: 0.30 category: "Budget";
 	parameter "Negociation par scores" var: utiliser_negociation_scores category: "Negociation";
 	parameter "Poids budget" var: poids_budget min: 0.0 max: 3.0 category: "Negociation";
 	parameter "Poids nutrition" var: poids_nutrition min: 0.0 max: 3.0 category: "Negociation";
 	parameter "Poids stock" var: poids_stock min: 0.0 max: 3.0 category: "Negociation";
 	parameter "Poids historique" var: poids_historique min: 0.0 max: 3.0 category: "Negociation";
+	parameter "Utiliser GIS OSM" var: utiliser_gis category: "Affichage";
 	parameter "Activer deplacement" var: activer_deplacement category: "Affichage";
 	parameter "Afficher icones" var: afficher_icones category: "Affichage";
-	parameter "Vitesse deplacement" var: vitesse_foyer min: 0.5 max: 8.0 category: "Affichage";
+	parameter "Vitesse deplacement" var: vitesse_foyer min: 0.00005 max: 8.0 category: "Affichage";
 	parameter "Seuil alerte nutrition" var: seuil_alerte_nutrition min: 1 max: 20 category: "Nutrition";
 	parameter "Budget initial defaut" var: budget_initial_defaut category: "Budget";
 	parameter "Tolerance budget" var: tolerance_depassement_budget category: "Budget";
 
 	output {
-		display "Carte" type: java2D refresh: every(15 #cycle) {
+		display "Carte" type: java2D refresh: every(10 #cycle) {
 			graphics "fond" {
 				draw world.shape color: #white;
 			}
-			species magasin aspect: base;
-			species salle_de_sport aspect: base;
-			species household aspect: base;
+			species route aspect: base;
+			species quartier aspect: base;
+			/* Dessin explicite en pixels : toujours lisible au-dessus des routes. */
+			graphics "agents" {
+				loop m over: magasin {
+					draw circle(12#px) color: #orange border: #black at: m.location;
+					draw m.label_carte color: #black font: font("Arial", 12, #bold) at: m.location + {0#px, 14#px};
+				}
+				loop s over: salle_de_sport {
+					draw circle(12#px) color: #green border: #darkgreen at: s.location;
+					draw s.label_carte color: #darkgreen font: font("Arial", 12, #bold) at: s.location + {0#px, 14#px};
+				}
+				loop h over: household {
+					rgb col <- #steelblue;
+					if h.regime = "vegan" {
+						col <- #seagreen;
+					} else if h.regime = "malbouffe_assumee" {
+						col <- #tomato;
+					} else if ("pas_de_porc" in h.restrictions_culturelles) {
+						col <- #mediumpurple;
+					}
+					draw circle(14#px) color: col border: #black at: h.location;
+					draw h.label_carte color: #black font: font("Arial", 12, #bold) at: h.location + {0#px, 16#px};
+					if h.alertes_nutritionnelles > 0 {
+						draw square(12#px) color: #red border: #white at: h.location + {12#px, -12#px};
+						draw ("" + h.alertes_nutritionnelles) color: #white font: font("Arial", 10, #bold)
+							at: h.location + {12#px, -12#px};
+					}
+				}
+			}
 		}
 		display "Stock %" type: 2d refresh: every(20 #cycle) {
 			chart "% repas depuis stock" type: series {
@@ -123,7 +171,11 @@ experiment LaokaLabUI type: gui {
 			}
 		}
 		monitor "Plans faits / max" value: "" + nb_plans_faits + " / " + nb_plans_max;
+		monitor "GIS OSM" value: utiliser_gis ? ("" + length(route) + " routes") : "OFF";
+		monitor "Agents carte" value: "" + length(household) + " foyers / "
+			+ length(magasin) + " magasins / " + length(salle_de_sport) + " salles";
 		monitor "Mode budget" value: mode_budget;
+		monitor "Epargne min %" value: int(ratio_epargne_min * 100);
 		monitor "Scores ON?" value: utiliser_negociation_scores;
 		monitor "% repas stock" value: part_repas_stock;
 		monitor "Budget moyen restant" value: budget_moyen_restant;
