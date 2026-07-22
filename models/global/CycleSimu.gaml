@@ -43,13 +43,15 @@ global {
 		somme_budgets_consommes <- 0.0;
 		journal_alertes_cycle <- "";
 		resume_choix_cycle <- "";
+		/* Inflation : les prix montent legerement a chaque plan. */
+		multiplicateur_prix <- multiplicateur_prix * (1.0 + taux_inflation);
 
 		ask household {
 			float budget_avant <- budget_restant;
 			do demander_plan;
 			float depense <- 0.0;
 			if mode_budget = "revenu" {
-				depense <- budget_avant + budget_periode - budget_restant;
+				depense <- budget_avant + salaire - budget_restant;
 			} else if mode_budget = "reset" {
 				depense <- budget_periode - budget_restant;
 			} else {
@@ -138,7 +140,9 @@ global {
 			write "Resume final | stock " + int(part_repas_stock) + "%"
 				+ " | malbouffe " + int(pct_malbouffe) + "%"
 				+ " | alertes cumul " + nb_alertes_nutritionnelles_total
-				+ " | unites achetees " + nb_unites_achetees_total;
+				+ " | unites achetees " + nb_unites_achetees_total
+				+ " | perimes " + unites_perimees_total
+				+ " | prix x" + (round(multiplicateur_prix * 100) / 100);
 		}
 	}
 

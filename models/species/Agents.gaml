@@ -34,6 +34,10 @@ global {
 	float poids_historique <- 0.8;
 	/* Part du salaire reservee (non depensable pour les repas). */
 	float ratio_epargne_min <- 0.08;
+	/* Inflation douce par plan (ex. 0.005 = +0.5 % des prix). */
+	float taux_inflation <- 0.005;
+	float multiplicateur_prix <- 1.0;
+	int unites_perimees_total <- 0;
 	/* Metriques de conflit (cumul du plan courant). */
 	int rejets_culture_plan <- 0;
 	int rejets_budget_plan <- 0;
@@ -145,10 +149,37 @@ species agent_provisions parent: agent_decision {
 		loop s over: mon_foyer.provisions {
 			ingredient_stock st <- s as ingredient_stock;
 			if st.nom = nom_ing {
+				if st.date_peremption = -2 {
+					return 0.0;
+				}
 				return st.quantite;
 			}
 		}
 		return 0.0;
+	}
+
+	int duree_conservation {
+		if mon_foyer.storage_mode = "frigidaire" {
+			return 8;
+		}
+		if mon_foyer.storage_mode = "panier" {
+			return 3;
+		}
+		return 5;
+	}
+
+	action appliquer_peremption {
+		loop s over: mon_foyer.provisions {
+			ingredient_stock st <- s as ingredient_stock;
+			if st.date_peremption >= 0 {
+				st.date_peremption <- st.date_peremption - 1;
+				if st.date_peremption < 0 and st.quantite > 0.0 {
+					unites_perimees_total <- unites_perimees_total + int(st.quantite);
+					st.quantite <- 0.0;
+					st.date_peremption <- -2;
+				}
+			}
+		}
 	}
 
 	action ajouter_ingredient (string nom_ing, float qte) {
@@ -157,6 +188,7 @@ species agent_provisions parent: agent_decision {
 			ingredient_stock st <- s as ingredient_stock;
 			if st.nom = nom_ing {
 				st.quantite <- st.quantite + qte;
+				st.date_peremption <- duree_conservation();
 				trouve <- true;
 			}
 		}
@@ -166,6 +198,7 @@ species agent_provisions parent: agent_decision {
 				quantite <- qte;
 				provenance <- myself.mon_foyer.storage_mode;
 				foyer_proprietaire <- myself.mon_foyer;
+				date_peremption <- myself.duree_conservation();
 			}
 			mon_foyer.provisions <- mon_foyer.provisions + stocks;
 		}
@@ -219,9 +252,9 @@ species agent_provisions parent: agent_decision {
 
 species agent_budget parent: agent_decision {
 
-	/* Vote soft : favorise les plats sous enveloppe. */
+	/* Vote soft : favorise les plats sous enveloppe (prix x inflation). */
 	float voter_plat (plat_item pi, float enveloppe) {
-		float cout <- pi.cout_estime * mon_foyer.nb_personnes;
+		float cout <- pi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix;
 		float plafond_souple <- enveloppe * (1.0 + tolerance_depassement_budget);
 		if cout <= enveloppe {
 			return 1.0 - (cout / (enveloppe + 1.0));
@@ -236,7 +269,7 @@ species agent_budget parent: agent_decision {
 		list ok <- [];
 		loop p over: candidats {
 			plat_item pi <- p as plat_item;
-			if pi.cout_estime * personnes <= budget_dispo {
+			if pi.cout_estime * personnes * multiplicateur_prix <= budget_dispo {
 				ok <- ok + [pi];
 			}
 		}
@@ -244,7 +277,7 @@ species agent_budget parent: agent_decision {
 			float plafond_souple <- budget_dispo * (1.0 + tolerance_depassement_budget);
 			loop p over: candidats {
 				plat_item pi <- p as plat_item;
-				if pi.cout_estime * personnes <= plafond_souple {
+				if pi.cout_estime * personnes * multiplicateur_prix <= plafond_souple {
 					ok <- ok + [pi];
 				}
 			}
@@ -535,7 +568,7 @@ species agent_arbitrage parent: agent_decision {
 		int hors_budget <- 0;
 		loop p over: apres_culture {
 			plat_item pi <- p as plat_item;
-			if pi.cout_estime * mon_foyer.nb_personnes > plafond {
+			if pi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix > plafond {
 				hors_budget <- hors_budget + 1;
 			}
 		}
@@ -649,7 +682,7 @@ species agent_arbitrage parent: agent_decision {
 		ask mon_foyer.mon_nutrition {
 			do enregistrer_choix(choisi);
 		}
-		float cout_total <- choisi.cout_estime * mon_foyer.nb_personnes;
+		float cout_total <- choisi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix;
 		return [
 			"type_repas"::type_r,
 			"nom_plat"::choisi.nom_plat,
@@ -776,6 +809,7 @@ species household {
 	string storage_mode <- "etalage";
 	int nb_personnes <- 1;
 	float budget_periode <- 50000.0;
+	float salaire <- 50000.0;
 	float budget_restant <- 50000.0;
 	string quartier_nom <- "";
 	list restrictions_culturelles <- [];
@@ -866,6 +900,13 @@ species household {
 				quantite <- float(base_qte[i]);
 				provenance <- myself.storage_mode;
 				foyer_proprietaire <- myself;
+				if myself.storage_mode = "frigidaire" {
+					date_peremption <- 8;
+				} else if myself.storage_mode = "panier" {
+					date_peremption <- 3;
+				} else {
+					date_peremption <- 5;
+				}
 			}
 			provisions <- provisions + stocks;
 		}
@@ -890,9 +931,9 @@ species household {
 		return total;
 	}
 
-	/* Budget depensable = hors reserve d'epargne (ratio du salaire/periode). */
+	/* Budget depensable = hors reserve d'epargne (ratio du salaire). */
 	float budget_spendable {
-		float plancher <- budget_periode * ratio_epargne_min;
+		float plancher <- salaire * ratio_epargne_min;
 		float dispo <- budget_restant - plancher;
 		if dispo < 0.0 {
 			return 0.0;
@@ -905,11 +946,15 @@ species household {
 		if activer_deplacement {
 			location <- position_maison;
 		}
-		/* Gestion budget entre periodes : budget_periode = allocation / salaire. */
+		/* Peremption des stocks avant generation du plan. */
+		ask mon_provisions {
+			do appliquer_peremption;
+		}
+		/* Gestion budget entre periodes : salaire verse, ou reset sur budget_periode. */
 		if mode_budget = "reset" {
 			budget_restant <- budget_periode;
 		} else if mode_budget = "revenu" {
-			budget_restant <- budget_restant + budget_periode;
+			budget_restant <- budget_restant + salaire;
 		}
 		/* mode persist : on ne recharge pas, le reste porte sur la suite. */
 		necessite_achat <- false;

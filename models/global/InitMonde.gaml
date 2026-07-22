@@ -9,7 +9,7 @@ import "../species/Agents.gaml"
 global {
 	list catalogue_plats <- [];
 	graph reseau_quartier;
-	int nb_households <- 6;
+	int nb_households <- 8;
 	float budget_initial_defaut <- 50000.0;
 	bool utiliser_gis <- true;
 
@@ -156,11 +156,16 @@ global {
 			quartier_nom <- "Analakely";
 			location <- p_shoprite;
 			produits_disponibles <- ["riz", "huile", "tomate", "oignon", "poulet", "porc", "boeuf", "poisson",
-				"lait_coco", "haricot", "carotte", "pain", "fromage", "oeuf", "pates", "tofu", "chips", "soda"];
+				"lait_coco", "haricot", "carotte", "pain", "fromage", "oeuf", "pates", "tofu", "chips", "soda",
+				"ananas", "avocat", "thon", "curry", "arachide", "sauce_soja", "legumes", "petit_pois",
+				"mais", "lait", "sucre", "farine_riz", "farine"];
 			prix <- ["riz"::2000.0, "huile"::3000.0, "tomate"::1000.0, "oignon"::800.0, "poulet"::6000.0,
 				"porc"::5500.0, "boeuf"::7000.0, "poisson"::5000.0, "lait_coco"::2500.0, "haricot"::1500.0,
 				"carotte"::1000.0, "pain"::1200.0, "fromage"::4000.0, "oeuf"::500.0, "pates"::2000.0,
-				"tofu"::3500.0, "chips"::1500.0, "soda"::1000.0];
+				"tofu"::3500.0, "chips"::1500.0, "soda"::1000.0, "ananas"::1500.0, "avocat"::2000.0,
+				"thon"::3500.0, "curry"::1800.0, "arachide"::1200.0, "sauce_soja"::1500.0,
+				"legumes"::2000.0, "petit_pois"::1500.0, "mais"::1000.0, "lait"::2000.0,
+				"sucre"::1500.0, "farine_riz"::1800.0, "farine"::1600.0];
 		}
 		create magasin number: 1 {
 			nom <- "Epicerie Isotry";
@@ -215,7 +220,7 @@ global {
 	}
 
 	action creer_personas {
-		int n <- min(nb_households, 6);
+		int n <- min(nb_households, 8);
 		loop i from: 0 to: n - 1 {
 			create household number: 1 {
 				if i = 0 {
@@ -230,6 +235,7 @@ global {
 					storage_mode <- "etalage";
 					nb_personnes <- 5;
 					budget_periode <- 35000.0;
+					salaire <- 35000.0;
 					restrictions_culturelles <- [];
 					allergies <- [];
 					regime <- "aucun";
@@ -246,6 +252,7 @@ global {
 					storage_mode <- "frigidaire";
 					nb_personnes <- 1;
 					budget_periode <- 80000.0;
+					salaire <- 80000.0;
 					restrictions_culturelles <- [];
 					allergies <- ["fruits_de_mer"];
 					regime <- "equilibre";
@@ -262,6 +269,7 @@ global {
 					storage_mode <- "panier";
 					nb_personnes <- 3;
 					budget_periode <- 50000.0;
+					salaire <- 50000.0;
 					restrictions_culturelles <- ["pas_de_porc"];
 					allergies <- [];
 					regime <- "aucun";
@@ -278,6 +286,7 @@ global {
 					storage_mode <- "frigidaire";
 					nb_personnes <- 2;
 					budget_periode <- 30000.0;
+					salaire <- 30000.0;
 					restrictions_culturelles <- [];
 					allergies <- [];
 					regime <- "vegan";
@@ -294,11 +303,12 @@ global {
 					storage_mode <- "etalage";
 					nb_personnes <- 2;
 					budget_periode <- budget_initial_defaut;
+					salaire <- budget_initial_defaut;
 					restrictions_culturelles <- [];
 					allergies <- [];
 					regime <- "aucun";
 					do initialiser_provisions("moyen");
-				} else {
+				} else if i = 5 {
 					if utiliser_gis {
 						location <- world.coord_carte(0.15, 0.55);
 					} else {
@@ -310,12 +320,47 @@ global {
 					storage_mode <- "etalage";
 					nb_personnes <- 1;
 					budget_periode <- 60000.0;
+					salaire <- 60000.0;
 					restrictions_culturelles <- [];
 					allergies <- [];
 					regime <- "malbouffe_assumee";
 					do initialiser_provisions("moyen");
+				} else if i = 6 {
+					if utiliser_gis {
+						location <- world.coord_carte(0.60, 0.55);
+					} else {
+						location <- {45.0, 35.0};
+					}
+					nom_foyer <- "Foyer Etudiant";
+					label_carte <- "Etudiant";
+					quartier_nom <- "Analakely";
+					storage_mode <- "panier";
+					nb_personnes <- 1;
+					budget_periode <- 20000.0;
+					salaire <- 20000.0;
+					restrictions_culturelles <- [];
+					allergies <- [];
+					regime <- "aucun";
+					do initialiser_provisions("faible");
+				} else {
+					if utiliser_gis {
+						location <- world.coord_carte(0.40, 0.70);
+					} else {
+						location <- {30.0, 80.0};
+					}
+					nom_foyer <- "Foyer Sportif";
+					label_carte <- "Sportif";
+					quartier_nom <- "Ivandry";
+					storage_mode <- "frigidaire";
+					nb_personnes <- 2;
+					budget_periode <- 55000.0;
+					salaire <- 55000.0;
+					restrictions_culturelles <- [];
+					allergies <- [];
+					regime <- "equilibre";
+					do initialiser_provisions("riche");
 				}
-				budget_restant <- budget_periode;
+				budget_restant <- salaire;
 				do creer_agents_decision;
 			}
 		}

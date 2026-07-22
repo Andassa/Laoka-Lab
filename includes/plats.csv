@@ -34,3 +34,18 @@ Smoothie vert,epinard;banane;lait_coco,3000,equilibre,false,,true
 Brochettes zebu,boeuf;oignon;poivron,9000,equilibre,false,,false
 Kabaka,mais;sucre;lait,2000,equilibre,false,lactose,false
 Voanjobory,pois_du_cap;porc;feuille_brede,6500,equilibre,true,,false
+Vary sosoa,riz;lait;sucre,1800,equilibre,false,lactose,false
+Anana sy voatavo,ananas;courge;sucre,2200,equilibre,false,,true
+Akoho ritra,poulet;tomate;oignon;huile,7000,equilibre,false,,false
+Mine sao,pates;legumes;sauce_soja,4800,equilibre,false,gluten;soja,true
+Salade de fruits,banane;mangue;ananas,2800,equilibre,false,,true
+Riz cantonais,riz;oeuf;carotte;petit_pois,5500,equilibre,false,oeuf,false
+Sandwich thon,pain;thon;mayonnaise,4200,malbouffe,false,fruits_de_mer;gluten;oeuf,false
+Koba,farine_riz;arachide;sucre,2500,equilibre,false,arachide,true
+Bouillon de zebu,boeuf;carotte;poireau,6000,equilibre,false,,false
+Crepe nature,farine;oeuf;lait,3000,malbouffe,false,gluten;oeuf;lactose,false
+Poulet curry,poulet;lait_coco;curry,8500,equilibre,false,,false
+Haricots rouges riz,haricot;riz;oignon,3800,equilibre,false,,true
+Salade de riz,riz;mais;thon;huile,5000,equilibre,false,fruits_de_mer,false
+Gateau riz,farine_riz;sucre;lait_coco,3200,malbouffe,false,,true
+Bol poke vegan,riz;tofu;avocat;soja,6500,equilibre,false,soja,true

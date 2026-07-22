@@ -10,7 +10,7 @@ import "global/CycleSimu.gaml"
 
 global {
 	string periode_simulation <- "semaine";
-	int nb_households <- 6;
+	int nb_households <- 8;
 	int seuil_alerte_nutrition <- 5;
 	float budget_initial_defaut <- 50000.0;
 	float tolerance_depassement_budget <- 0.10;
@@ -29,6 +29,9 @@ global {
 	float poids_stock <- 1.2;
 	float poids_historique <- 0.8;
 	float ratio_epargne_min <- 0.08;
+	float taux_inflation <- 0.005;
+	float multiplicateur_prix <- 1.0;
+	int unites_perimees_total <- 0;
 	bool utiliser_gis <- true;
 
 	/* Shapefile OSM Antananarivo (routes) — ODbL, voir includes/gis/ATTRIBUTION.txt */
@@ -62,6 +65,7 @@ global {
 		write "Budget=" + mode_budget + " | Scores="
 			+ (utiliser_negociation_scores ? "ON" : "OFF")
 			+ " | Epargne min=" + int(ratio_epargne_min * 100) + "%"
+			+ " | Inflation=" + (round(taux_inflation * 1000) / 10) + "%/plan"
 			+ " | GIS=" + (utiliser_gis ? "ON" : "OFF")
 			+ " | Arret @" + nb_plans_max + " plans";
 		write ">>> Regarde la fenetre CARTE : points orange=magasins, vert=salles, colores=foyers";
@@ -94,11 +98,12 @@ global {
 
 experiment LaokaLabUI type: gui {
 	parameter "Periode" var: periode_simulation among: ["jour", "semaine", "mois"] category: "Simulation";
-	parameter "Nb foyers" var: nb_households min: 1 max: 6 category: "Simulation";
+	parameter "Nb foyers" var: nb_households min: 1 max: 8 category: "Simulation";
 	parameter "Nb plans max" var: nb_plans_max min: 10 max: 100 category: "Simulation";
 	parameter "Pas entre plans" var: pas_entre_plans min: 5 max: 60 category: "Simulation";
 	parameter "Mode budget" var: mode_budget among: ["revenu", "reset", "persist"] category: "Budget";
 	parameter "Epargne min (ratio)" var: ratio_epargne_min min: 0.0 max: 0.30 category: "Budget";
+	parameter "Inflation / plan" var: taux_inflation min: 0.0 max: 0.05 category: "Budget";
 	parameter "Negociation par scores" var: utiliser_negociation_scores category: "Negociation";
 	parameter "Poids budget" var: poids_budget min: 0.0 max: 3.0 category: "Negociation";
 	parameter "Poids nutrition" var: poids_nutrition min: 0.0 max: 3.0 category: "Negociation";
@@ -122,12 +127,12 @@ experiment LaokaLabUI type: gui {
 			/* Dessin explicite en pixels : toujours lisible au-dessus des routes. */
 			graphics "agents" {
 				loop m over: magasin {
-					draw circle(12#px) color: #orange border: #black at: m.location;
-					draw m.label_carte color: #black font: font("Arial", 12, #bold) at: m.location + {0#px, 14#px};
+					draw circle(16#px) color: #orange border: #black at: m.location;
+					draw m.label_carte color: #black font: font("Arial", 13, #bold) at: m.location + {0#px, 18#px};
 				}
 				loop s over: salle_de_sport {
-					draw circle(12#px) color: #green border: #darkgreen at: s.location;
-					draw s.label_carte color: #darkgreen font: font("Arial", 12, #bold) at: s.location + {0#px, 14#px};
+					draw circle(16#px) color: #green border: #darkgreen at: s.location;
+					draw s.label_carte color: #darkgreen font: font("Arial", 13, #bold) at: s.location + {0#px, 18#px};
 				}
 				loop h over: household {
 					rgb col <- #steelblue;
@@ -138,14 +143,18 @@ experiment LaokaLabUI type: gui {
 					} else if ("pas_de_porc" in h.restrictions_culturelles) {
 						col <- #mediumpurple;
 					}
-					draw circle(14#px) color: col border: #black at: h.location;
-					draw h.label_carte color: #black font: font("Arial", 12, #bold) at: h.location + {0#px, 16#px};
+					draw circle(18#px) color: col border: #black at: h.location;
+					draw h.label_carte color: #black font: font("Arial", 13, #bold) at: h.location + {0#px, 20#px};
 					if h.alertes_nutritionnelles > 0 {
-						draw square(12#px) color: #red border: #white at: h.location + {12#px, -12#px};
-						draw ("" + h.alertes_nutritionnelles) color: #white font: font("Arial", 10, #bold)
-							at: h.location + {12#px, -12#px};
+						draw square(14#px) color: #red border: #white at: h.location + {14#px, -14#px};
+						draw ("" + h.alertes_nutritionnelles) color: #white font: font("Arial", 11, #bold)
+							at: h.location + {14#px, -14#px};
 					}
 				}
+			}
+			graphics "legende" {
+				draw "Orange=magasin | Vert=salle | Couleurs=foyers" color: #dimgray
+					font: font("Arial", 11, #bold) at: {5#px, 18#px};
 			}
 		}
 		display "Stock %" type: 2d refresh: every(20 #cycle) {
@@ -176,6 +185,8 @@ experiment LaokaLabUI type: gui {
 			+ length(magasin) + " magasins / " + length(salle_de_sport) + " salles";
 		monitor "Mode budget" value: mode_budget;
 		monitor "Epargne min %" value: int(ratio_epargne_min * 100);
+		monitor "Inflation cumul" value: "x" + (round(multiplicateur_prix * 100) / 100);
+		monitor "Unites perimees" value: unites_perimees_total;
 		monitor "Scores ON?" value: utiliser_negociation_scores;
 		monitor "% repas stock" value: part_repas_stock;
 		monitor "Budget moyen restant" value: budget_moyen_restant;

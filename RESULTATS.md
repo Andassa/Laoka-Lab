@@ -93,22 +93,22 @@ Comparer éventuellement un run `ScenarioPipelineClassique` pour le contraste.
 
 ## 6. Limites (à mentionner)
 
-- Quartiers **et** shapefile OSM centre Antananarivo (`includes/gis/antananarivo_roads.shp`, 1136 routes, ODbL)
-- Catalogue de **35 plats** (échantillon)
-- Pas de périssabilité fine des stocks
+- Shapefile OSM = **centre** Antananarivo (pas tout le Grand Tana)
+- Catalogue **50 plats**, **8 personas** (échantillon pédagogique)
 - Négociation via **votes `ask` + scores** (pas de protocole FIPA complet)
 
 ---
 
 ## 7. Évolutions post-valorisation
 
-- Votes agents soft (`voter_plat`) collectés par `ask` dans l’arbitrage
-- Plancher d’épargne (`ratio_epargne_min`, défaut 8 %) : budget dépensable hors réserve
-- Carte avec 6 quartiers nommés (Analakely, Isotry, Andraharo, Antaninarenina, Mahamasina, Ivandry)
+- Votes agents soft (`voter_plat`) via `ask`
+- Plancher d’épargne + **salaire** distinct + **inflation** par plan
+- Périssabilité simple du stock (frigidaire 8 / étalage 5 / panier 3 plans)
+- Carte OSM + légende agents ; 2 personas ajoutés (Étudiant, Sportif)
 
 ---
 
 ## 8. Conclusion projet
 
 Le laboratoire SMA atteint son objectif : **montrer et mesurer** comment provisions, budget, culture, nutrition, historique et logistique co-construisent un plan de repas.  
-La version scores + budget revenu (+ épargne min) est la configuration de référence recommandée pour la démo et le mémoire.
+Config de référence : scores ON + budget `revenu` + épargne 8 % + GIS ON.

@@ -37,13 +37,15 @@ Chaque `household` a **ses propres** instances d’agents. En mode scores, l’a
 
 | Paramètre | Valeurs | Effet |
 |---|---|---|
-| `mode_budget` | `revenu` / `reset` / `persist` | Report + allocation / recharge totale / jamais |
-| `ratio_epargne_min` | 0–0.30 (défaut 0.08) | Plancher non dépensable (= % du salaire/période) |
-| `utiliser_negociation_scores` | true / false | Votes pondérés vs ancien pipeline séquentiel |
+| `mode_budget` | `revenu` / `reset` / `persist` | Salaire versé / recharge / jamais |
+| `ratio_epargne_min` | 0–0.30 (défaut 0.08) | Plancher = % du **salaire** |
+| `taux_inflation` | 0–0.05 (défaut 0.005) | +0,5 % des prix à chaque plan |
+| `utiliser_negociation_scores` | true / false | Votes pondérés vs pipeline séquentiel |
+| `nb_households` | 1–8 | Personas actifs |
 | `nb_plans_max` | 10–100 | Arrêt automatique |
 | `activer_deplacement` | true / false | Animation magasin/salle (démo) |
 
-Carte : **shapefile OSM** `includes/gis/antananarivo_roads.shp` (1136 routes, centre Tana, ODbL). Paramètre `utiliser_gis` (défaut ON).
+Carte : **shapefile OSM** + points agents (légende sur la carte).  
 
 ---
 
@@ -57,6 +59,8 @@ Carte : **shapefile OSM** `includes/gis/antananarivo_roads.shp` (1136 routes, ce
 | Vegan | Régime vegan, stock riche |
 | Défaut | Profil moyen |
 | Malbouffe | Malbouffe assumée → alertes |
+| Étudiant | Solo, budget très serré, panier |
+| Sportif | 2 pers., régime équilibré, frigidaire |
 
 ---
 
