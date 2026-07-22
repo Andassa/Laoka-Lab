@@ -40,9 +40,9 @@ global {
 			position_maison <- location;
 		}
 		foyer_selectionne <- first(household);
-		save "cycle;nom_foyer;type;plat_ou_resume;cout;detail;magasin;salle;achat;alertes"
+		save ("cycle;nom_foyer;type;plat_ou_resume;cout;detail;magasin;salle;achat;alertes" + "\n")
 			to: "../results/arbitrage_log.csv" format: "text" rewrite: true;
-		save "cycle;plan;pct_stock;stock_moy;alertes;pct_malbouffe;pct_rejet_culture;pct_rejet_budget;evit_hist;nb_malbouffe;nb_equilibre;rejets_culture;rejets_budget"
+		save ("cycle;plan;pct_stock;stock_moy;alertes;pct_malbouffe;pct_rejet_culture;pct_rejet_budget;evit_hist;nb_malbouffe;nb_equilibre;rejets_culture;rejets_budget" + "\n")
 			to: "../results/conflits_log.csv" format: "text" rewrite: true;
 		write "=== Laoka Lab : " + length(household) + " foyers, "
 			+ length(magasin) + " magasins, " + length(catalogue_plats) + " plats ===";

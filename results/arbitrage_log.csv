@@ -1,1 +1,241 @@
-cycle;nom_foyer;type;plat_ou_resume;cout;detail;magasin;salle;achat;alertes0;Foyer Malgache;resume;Akoho sy voanio;35000.0;stock=16;Shoprite Analakely;;true;00;Foyer Europeen;resume;Poulet grille legumes;-12500.0;stock=16;SuperU Andraharo;;true;00;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=18;SuperU Andraharo;;true;00;Foyer Vegan;resume;Pasta pesto;30000.0;stock=36;Shoprite Analakely;;true;00;Foyer Defaut;resume;Riz legumes sautes;45000.0;stock=16;Shoprite Analakely;;true;00;Foyer Malbouffe;resume;Brochettes zebu;27000.0;stock=29;SuperU Andraharo;Dojo Mahamasina (d=33);true;120;Foyer Malgache;resume;Trondro sy voanio;35000.0;stock=28;Shoprite Analakely;;true;020;Foyer Europeen;resume;Hen'omby ritra;4000.0;stock=21;Epicerie Isotry;;true;020;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=25;Epicerie Isotry;;true;020;Foyer Vegan;resume;Tsaramaso;30000.0;stock=22;Shoprite Analakely;;true;020;Foyer Defaut;resume;Ravitoto;50000.0;stock=21;Epicerie Isotry;;true;020;Foyer Malbouffe;resume;Omelette fromage;36500.0;stock=28;SuperU Andraharo;;true;140;Foyer Malgache;resume;Cereales lait;35000.0;stock=18;SuperU Andraharo;;true;040;Foyer Europeen;resume;Voanjobory;5500.0;stock=20;Epicerie Isotry;;true;040;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=21;Epicerie Isotry;;true;040;Foyer Vegan;resume;Tsaramaso;30000.0;stock=19;Shoprite Analakely;;true;040;Foyer Defaut;resume;Lasary voatabia;50000.0;stock=17;Epicerie Isotry;;true;040;Foyer Malbouffe;resume;Hen'omby ritra;58000.0;stock=34;Epicerie Isotry;Dojo Mahamasina (d=33);true;260;Foyer Malgache;resume;Poisson grille;35000.0;stock=16;Shoprite Analakely;;true;060;Foyer Europeen;resume;Poulet grille legumes;9500.0;stock=19;SuperU Andraharo;;true;060;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=12;Shoprite Analakely;;true;060;Foyer Vegan;resume;Salade composee;30000.0;stock=23;SuperU Andraharo;;true;060;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;060;Foyer Malbouffe;resume;Salade composee;56500.0;stock=20;Epicerie Isotry;;true;280;Foyer Malgache;resume;Mofo gasy;35000.0;stock=24;Epicerie Isotry;;true;080;Foyer Europeen;resume;Voanjobory;17000.0;stock=21;Shoprite Analakely;;true;080;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=18;Epicerie Isotry;;true;080;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;080;Foyer Defaut;resume;Kitoza grille;50000.0;stock=23;Epicerie Isotry;;true;080;Foyer Malbouffe;resume;Frites mayo;51000.0;stock=29;SuperU Andraharo;Dojo Mahamasina (d=33);true;3100;Foyer Malgache;resume;Ravitoto aux champignons;35000.0;stock=21;Epicerie Isotry;;true;0100;Foyer Europeen;resume;Poulet grille legumes;25000.0;stock=25;SuperU Andraharo;;true;0100;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=30;Shoprite Analakely;;true;0100;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0100;Foyer Defaut;resume;Romazava;50000.0;stock=26;SuperU Andraharo;;true;0100;Foyer Malbouffe;resume;Kabaka;47000.0;stock=20;Epicerie Isotry;;true;3120;Foyer Malgache;resume;Henakisoa sy voatavo;35000.0;stock=13;Shoprite Analakely;;true;0120;Foyer Europeen;resume;Tofu saute;37000.0;stock=30;SuperU Andraharo;;true;0120;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=21;Shoprite Analakely;;true;0120;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0120;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=31;Shoprite Analakely;;true;0120;Foyer Malbouffe;resume;Burger classic;52500.0;stock=24;Shoprite Analakely;Dojo Mahamasina (d=33);true;4140;Foyer Malgache;resume;Cereales lait;35000.0;stock=19;SuperU Andraharo;;true;0140;Foyer Europeen;resume;Hen'omby ritra;44500.0;stock=19;Shoprite Analakely;;true;0140;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=19;Epicerie Isotry;;true;0140;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0140;Foyer Defaut;resume;Tsaramaso;50000.0;stock=21;SuperU Andraharo;;true;0140;Foyer Malbouffe;resume;Hen'omby ritra;59500.0;stock=17;Epicerie Isotry;Dojo Mahamasina (d=33);true;5160;Foyer Malgache;resume;Kitoza grille;35000.0;stock=32;Epicerie Isotry;;true;0160;Foyer Europeen;resume;Kitoza grille;48000.0;stock=16;SuperU Andraharo;;true;0160;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=21;Shoprite Analakely;;true;0160;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0160;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=16;Shoprite Analakely;;true;0160;Foyer Malbouffe;resume;Chips et soda;57000.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;6180;Foyer Malgache;resume;Poisson grille;35000.0;stock=14;Shoprite Analakely;;true;0180;Foyer Europeen;resume;Pasta pesto;57500.0;stock=29;Shoprite Analakely;;true;0180;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=19;Epicerie Isotry;;true;0180;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0180;Foyer Defaut;resume;Ravitoto aux champignons;50000.0;stock=36;Epicerie Isotry;;true;0180;Foyer Malbouffe;resume;Chips et soda;51500.0;stock=21;Shoprite Analakely;Dojo Mahamasina (d=33);true;7200;Foyer Malgache;resume;Henakisoa sy voatavo;35000.0;stock=19;Shoprite Analakely;;true;0200;Foyer Europeen;resume;Romazava;50000.0;stock=27;Shoprite Analakely;;true;0200;Foyer Sans Porc;resume;Tofu saute;50000.0;stock=26;SuperU Andraharo;;true;0200;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0200;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=25;Shoprite Analakely;;true;0200;Foyer Malbouffe;resume;Omelette fromage;57000.0;stock=27;Shoprite Analakely;Dojo Mahamasina (d=33);true;8220;Foyer Malgache;resume;Mofo gasy;35000.0;stock=23;Epicerie Isotry;;true;0220;Foyer Europeen;resume;Tofu saute;68000.0;stock=27;SuperU Andraharo;;true;0220;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=22;Shoprite Analakely;;true;0220;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0220;Foyer Defaut;resume;Romazava;50000.0;stock=19;Epicerie Isotry;;true;0220;Foyer Malbouffe;resume;Burger classic;55000.0;stock=29;Shoprite Analakely;Dojo Mahamasina (d=33);true;9240;Foyer Malgache;resume;Yaourt fruits;35000.0;stock=29;SuperU Andraharo;;true;0240;Foyer Europeen;resume;Kitoza grille;62000.0;stock=24;Epicerie Isotry;;true;0240;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=9;Shoprite Analakely;;true;0240;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0240;Foyer Defaut;resume;Ravitoto aux champignons;50000.0;stock=20;Epicerie Isotry;;true;0240;Foyer Malbouffe;resume;Saosisy sy oeuf;56500.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;10260;Foyer Malgache;resume;Akoho gasy;35000.0;stock=26;Shoprite Analakely;;true;0260;Foyer Europeen;resume;Hen'omby ritra;74000.0;stock=19;Epicerie Isotry;;true;0260;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=24;Shoprite Analakely;;true;0260;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0260;Foyer Defaut;resume;Lasary voatabia;50000.0;stock=25;Epicerie Isotry;;true;0260;Foyer Malbouffe;resume;Pizza fromage;57000.0;stock=12;SuperU Andraharo;Dojo Mahamasina (d=33);true;11280;Foyer Malgache;resume;Cereales lait;35000.0;stock=17;SuperU Andraharo;;true;0280;Foyer Europeen;resume;Tsaramaso;64500.0;stock=22;Epicerie Isotry;;true;0280;Foyer Sans Porc;resume;Brochettes zebu;50000.0;stock=26;Shoprite Analakely;;true;0280;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0280;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0280;Foyer Malbouffe;resume;Tsaramaso;52000.0;stock=21;Epicerie Isotry;Dojo Mahamasina (d=33);true;12300;Foyer Malgache;resume;Mofo gasy;35000.0;stock=14;Epicerie Isotry;;true;0300;Foyer Europeen;resume;Pasta pesto;65000.0;stock=27;Shoprite Analakely;;true;0300;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=20;SuperU Andraharo;;true;0300;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0300;Foyer Defaut;resume;Riz legumes sautes;50000.0;stock=15;Shoprite Analakely;;true;0300;Foyer Malbouffe;resume;Hot dog;47000.0;stock=17;SuperU Andraharo;Dojo Mahamasina (d=33);true;13320;Foyer Malgache;resume;Poisson grille;35000.0;stock=23;Shoprite Analakely;;true;0320;Foyer Europeen;resume;Henakisoa sy voatavo;59500.0;stock=24;Shoprite Analakely;;true;0320;Foyer Sans Porc;resume;Salade composee;50000.0;stock=14;SuperU Andraharo;;true;0320;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0320;Foyer Defaut;resume;Salade composee;50000.0;stock=21;SuperU Andraharo;;true;0320;Foyer Malbouffe;resume;Pizza fromage;54500.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;14340;Foyer Malgache;resume;Tsaramaso;35000.0;stock=32;Shoprite Analakely;;true;0340;Foyer Europeen;resume;Akoho gasy;63000.0;stock=24;Epicerie Isotry;;true;0340;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=19;Epicerie Isotry;;true;0340;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0340;Foyer Defaut;resume;Poisson grille;50000.0;stock=32;SuperU Andraharo;;true;0340;Foyer Malbouffe;resume;Riz legumes sautes;54000.0;stock=28;Epicerie Isotry;Dojo Mahamasina (d=33);true;15360;Foyer Malgache;resume;Poisson grille;35000.0;stock=21;Shoprite Analakely;;true;0360;Foyer Europeen;resume;Soupe de legumes;74000.0;stock=32;Shoprite Analakely;;true;0360;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=30;Shoprite Analakely;;true;0360;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0360;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=32;Shoprite Analakely;;true;0360;Foyer Malbouffe;resume;Chips et soda;50000.0;stock=25;Shoprite Analakely;Dojo Mahamasina (d=33);true;16380;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=11;Shoprite Analakely;;true;0380;Foyer Europeen;resume;Smoothie vert;66000.0;stock=25;Epicerie Isotry;;true;0380;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=19;Epicerie Isotry;;true;0380;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0380;Foyer Defaut;resume;Mofo gasy;50000.0;stock=19;Epicerie Isotry;;true;0380;Foyer Malbouffe;resume;Lasary voatabia;54500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;17400;Foyer Malgache;resume;Mofo gasy;35000.0;stock=28;Epicerie Isotry;;true;0400;Foyer Europeen;resume;Ravitoto aux champignons;63500.0;stock=21;Epicerie Isotry;;true;0400;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=11;SuperU Andraharo;;true;0400;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0400;Foyer Defaut;resume;Brochettes zebu;50000.0;stock=21;Shoprite Analakely;;true;0400;Foyer Malbouffe;resume;Yaourt fruits;52000.0;stock=21;Epicerie Isotry;Dojo Mahamasina (d=33);true;18420;Foyer Malgache;resume;Soupe de legumes;35000.0;stock=26;Shoprite Analakely;;true;0420;Foyer Europeen;resume;Ravitoto aux champignons;52000.0;stock=22;Shoprite Analakely;;true;0420;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=16;Shoprite Analakely;;true;0420;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0420;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=26;Shoprite Analakely;;true;0420;Foyer Malbouffe;resume;Pizza fromage;49500.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;19440;Foyer Malgache;resume;Poisson grille;35000.0;stock=17;Shoprite Analakely;;true;0440;Foyer Europeen;resume;Voanjobory;41000.0;stock=30;Epicerie Isotry;;true;0440;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=18;Shoprite Analakely;;true;0440;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0440;Foyer Defaut;resume;Cereales lait;50000.0;stock=21;SuperU Andraharo;;true;0440;Foyer Malbouffe;resume;Chips et soda;48500.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;20460;Foyer Malgache;resume;Hen'omby ritra;35000.0;stock=12;Shoprite Analakely;;true;0460;Foyer Europeen;resume;Romazava;42000.0;stock=32;Epicerie Isotry;;true;0460;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=21;Shoprite Analakely;;true;0460;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0460;Foyer Defaut;resume;Mofo gasy;50000.0;stock=35;Epicerie Isotry;;true;0460;Foyer Malbouffe;resume;Nuggets poulet;57000.0;stock=23;SuperU Andraharo;Dojo Mahamasina (d=33);true;21480;Foyer Malgache;resume;Kitoza grille;35000.0;stock=16;Epicerie Isotry;;true;0480;Foyer Europeen;resume;Voanjobory;42500.0;stock=26;Shoprite Analakely;;true;0480;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=24;SuperU Andraharo;;true;0480;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0480;Foyer Defaut;resume;Omelette fromage;50000.0;stock=34;SuperU Andraharo;;true;0480;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=25;Shoprite Analakely;Dojo Mahamasina (d=33);true;22500;Foyer Malgache;resume;Cereales lait;35000.0;stock=15;SuperU Andraharo;;true;0500;Foyer Europeen;resume;Poulet grille legumes;48000.0;stock=25;SuperU Andraharo;;true;0500;Foyer Sans Porc;resume;Akoho sy voanio;50000.0;stock=24;Shoprite Analakely;;true;0500;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0500;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=20;Shoprite Analakely;;true;0500;Foyer Malbouffe;resume;Tsaramaso;57500.0;stock=16;Shoprite Analakely;Dojo Mahamasina (d=33);true;23520;Foyer Malgache;resume;Tsaramaso;35000.0;stock=19;Shoprite Analakely;;true;0520;Foyer Europeen;resume;Akoho sy voanio;53500.0;stock=31;Shoprite Analakely;;true;0520;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=16;Epicerie Isotry;;true;0520;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0520;Foyer Defaut;resume;Mofo gasy;50000.0;stock=28;Epicerie Isotry;;true;0520;Foyer Malbouffe;resume;Chips et soda;53500.0;stock=16;Shoprite Analakely;Dojo Mahamasina (d=33);true;24540;Foyer Malgache;resume;Akoho gasy;35000.0;stock=25;Shoprite Analakely;;true;0540;Foyer Europeen;resume;Kitoza grille;64500.0;stock=31;Epicerie Isotry;;true;0540;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=17;Shoprite Analakely;;true;0540;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0540;Foyer Defaut;resume;Voanjobory;50000.0;stock=26;SuperU Andraharo;;true;0540;Foyer Malbouffe;resume;Nuggets poulet;50500.0;stock=9;SuperU Andraharo;Dojo Mahamasina (d=33);true;25560;Foyer Malgache;resume;Pasta pesto;35000.0;stock=28;Shoprite Analakely;;true;0560;Foyer Europeen;resume;Henakisoa sy voatavo;75000.0;stock=26;Epicerie Isotry;;true;0560;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=11;SuperU Andraharo;;true;0560;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0560;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=34;Shoprite Analakely;;true;0560;Foyer Malbouffe;resume;Pizza fromage;49000.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;26580;Foyer Malgache;resume;Cereales lait;35000.0;stock=24;SuperU Andraharo;;true;0580;Foyer Europeen;resume;Hen'omby ritra;76000.0;stock=23;Epicerie Isotry;;true;0580;Foyer Sans Porc;resume;Kitoza grille;50000.0;stock=17;SuperU Andraharo;;true;0580;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0580;Foyer Defaut;resume;Cereales lait;50000.0;stock=29;SuperU Andraharo;;true;0580;Foyer Malbouffe;resume;Riz legumes sautes;54500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;27600;Foyer Malgache;resume;Poulet grille legumes;35000.0;stock=11;SuperU Andraharo;;true;0600;Foyer Europeen;resume;Henakisoa sy voatavo;75000.0;stock=28;Shoprite Analakely;;true;0600;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=25;Shoprite Analakely;;true;0600;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0600;Foyer Defaut;resume;Trondro sy voanio;50000.0;stock=22;Shoprite Analakely;;true;0600;Foyer Malbouffe;resume;Pizza fromage;47000.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;28620;Foyer Malgache;resume;Soupe de legumes;35000.0;stock=25;Shoprite Analakely;;true;0620;Foyer Europeen;resume;Poulet grille legumes;78000.0;stock=27;SuperU Andraharo;;true;0620;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=15;Epicerie Isotry;;true;0620;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0620;Foyer Defaut;resume;Akoho sy voanio;50000.0;stock=14;SuperU Andraharo;;true;0620;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;29640;Foyer Malgache;resume;Akoho gasy;35000.0;stock=29;Shoprite Analakely;;true;0640;Foyer Europeen;resume;Pasta pesto;79000.0;stock=39;Shoprite Analakely;;true;0640;Foyer Sans Porc;resume;Vary amin anana;50000.0;stock=19;Epicerie Isotry;;true;0640;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0640;Foyer Defaut;resume;Salade composee;50000.0;stock=22;SuperU Andraharo;;true;0640;Foyer Malbouffe;resume;Burger classic;51500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;30660;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=21;Shoprite Analakely;;true;0660;Foyer Europeen;resume;Voanjobory;74500.0;stock=20;Shoprite Analakely;;true;0660;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=23;Shoprite Analakely;;true;0660;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0660;Foyer Defaut;resume;Ravitoto;50000.0;stock=22;Epicerie Isotry;;true;0660;Foyer Malbouffe;resume;Saosisy sy oeuf;56000.0;stock=17;Shoprite Analakely;Dojo Mahamasina (d=33);true;31680;Foyer Malgache;resume;Pasta pesto;35000.0;stock=31;Shoprite Analakely;;true;0680;Foyer Europeen;resume;Akoho gasy;73500.0;stock=23;Epicerie Isotry;;true;0680;Foyer Sans Porc;resume;Tofu saute;50000.0;stock=24;SuperU Andraharo;;true;0680;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0680;Foyer Defaut;resume;Voanjobory;50000.0;stock=30;SuperU Andraharo;;true;0680;Foyer Malbouffe;resume;Nuggets poulet;55000.0;stock=17;SuperU Andraharo;Dojo Mahamasina (d=33);true;32700;Foyer Malgache;resume;Poulet grille legumes;35000.0;stock=26;SuperU Andraharo;;true;0700;Foyer Europeen;resume;Pasta pesto;75000.0;stock=37;Shoprite Analakely;;true;0700;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=11;Epicerie Isotry;;true;0700;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0700;Foyer Defaut;resume;Poulet grille legumes;50000.0;stock=19;SuperU Andraharo;;true;0700;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=21;Shoprite Analakely;Dojo Mahamasina (d=33);true;33720;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=19;Shoprite Analakely;;true;0720;Foyer Europeen;resume;Riz legumes sautes;58500.0;stock=23;Shoprite Analakely;;true;0720;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=25;Shoprite Analakely;;true;0720;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0720;Foyer Defaut;resume;Poisson grille;50000.0;stock=21;SuperU Andraharo;;true;0720;Foyer Malbouffe;resume;Pizza fromage;54000.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;34740;Foyer Malgache;resume;Trondro sy voanio;35000.0;stock=23;Shoprite Analakely;;true;0740;Foyer Europeen;resume;Akoho sy voanio;72500.0;stock=13;Shoprite Analakely;;true;0740;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=24;Shoprite Analakely;;true;0740;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0740;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0740;Foyer Malbouffe;resume;Burger classic;47000.0;stock=22;Shoprite Analakely;Dojo Mahamasina (d=33);true;35760;Foyer Malgache;resume;Cereales lait;35000.0;stock=23;SuperU Andraharo;;true;0760;Foyer Europeen;resume;Kitoza grille;65500.0;stock=19;Epicerie Isotry;;true;0760;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=25;SuperU Andraharo;;true;0760;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0760;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=35;SuperU Andraharo;;true;0760;Foyer Malbouffe;resume;Pizza fromage;54000.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;36780;Foyer Malgache;resume;Salade composee;35000.0;stock=28;SuperU Andraharo;;true;0780;Foyer Europeen;resume;Tofu saute;74000.0;stock=28;SuperU Andraharo;;true;0780;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=21;Epicerie Isotry;;true;0780;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0780;Foyer Defaut;resume;Cereales lait;50000.0;stock=19;SuperU Andraharo;;true;0780;Foyer Malbouffe;resume;Burger classic;57000.0;stock=18;SuperU Andraharo;Dojo Mahamasina (d=33);true;37
+cycle;nom_foyer;type;plat_ou_resume;cout;detail;magasin;salle;achat;alertes
+0;Foyer Malgache;resume;Akoho sy voanio;35000.0;stock=16;Shoprite Analakely;;true;0
+0;Foyer Europeen;resume;Poulet grille legumes;-12500.0;stock=16;SuperU Andraharo;;true;0
+0;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=18;SuperU Andraharo;;true;0
+0;Foyer Vegan;resume;Pasta pesto;30000.0;stock=36;Shoprite Analakely;;true;0
+0;Foyer Defaut;resume;Riz legumes sautes;45000.0;stock=16;Shoprite Analakely;;true;0
+0;Foyer Malbouffe;resume;Brochettes zebu;27000.0;stock=29;SuperU Andraharo;Dojo Mahamasina (d=33);true;1
+20;Foyer Malgache;resume;Trondro sy voanio;35000.0;stock=28;Shoprite Analakely;;true;0
+20;Foyer Europeen;resume;Hen'omby ritra;4000.0;stock=21;Epicerie Isotry;;true;0
+20;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=25;Epicerie Isotry;;true;0
+20;Foyer Vegan;resume;Tsaramaso;30000.0;stock=22;Shoprite Analakely;;true;0
+20;Foyer Defaut;resume;Ravitoto;50000.0;stock=21;Epicerie Isotry;;true;0
+20;Foyer Malbouffe;resume;Omelette fromage;36500.0;stock=28;SuperU Andraharo;;true;1
+40;Foyer Malgache;resume;Cereales lait;35000.0;stock=18;SuperU Andraharo;;true;0
+40;Foyer Europeen;resume;Voanjobory;5500.0;stock=20;Epicerie Isotry;;true;0
+40;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=21;Epicerie Isotry;;true;0
+40;Foyer Vegan;resume;Tsaramaso;30000.0;stock=19;Shoprite Analakely;;true;0
+40;Foyer Defaut;resume;Lasary voatabia;50000.0;stock=17;Epicerie Isotry;;true;0
+40;Foyer Malbouffe;resume;Hen'omby ritra;58000.0;stock=34;Epicerie Isotry;Dojo Mahamasina (d=33);true;2
+60;Foyer Malgache;resume;Poisson grille;35000.0;stock=16;Shoprite Analakely;;true;0
+60;Foyer Europeen;resume;Poulet grille legumes;9500.0;stock=19;SuperU Andraharo;;true;0
+60;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=12;Shoprite Analakely;;true;0
+60;Foyer Vegan;resume;Salade composee;30000.0;stock=23;SuperU Andraharo;;true;0
+60;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0
+60;Foyer Malbouffe;resume;Salade composee;56500.0;stock=20;Epicerie Isotry;;true;2
+80;Foyer Malgache;resume;Mofo gasy;35000.0;stock=24;Epicerie Isotry;;true;0
+80;Foyer Europeen;resume;Voanjobory;17000.0;stock=21;Shoprite Analakely;;true;0
+80;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=18;Epicerie Isotry;;true;0
+80;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+80;Foyer Defaut;resume;Kitoza grille;50000.0;stock=23;Epicerie Isotry;;true;0
+80;Foyer Malbouffe;resume;Frites mayo;51000.0;stock=29;SuperU Andraharo;Dojo Mahamasina (d=33);true;3
+100;Foyer Malgache;resume;Ravitoto aux champignons;35000.0;stock=21;Epicerie Isotry;;true;0
+100;Foyer Europeen;resume;Poulet grille legumes;25000.0;stock=25;SuperU Andraharo;;true;0
+100;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=30;Shoprite Analakely;;true;0
+100;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+100;Foyer Defaut;resume;Romazava;50000.0;stock=26;SuperU Andraharo;;true;0
+100;Foyer Malbouffe;resume;Kabaka;47000.0;stock=20;Epicerie Isotry;;true;3
+120;Foyer Malgache;resume;Henakisoa sy voatavo;35000.0;stock=13;Shoprite Analakely;;true;0
+120;Foyer Europeen;resume;Tofu saute;37000.0;stock=30;SuperU Andraharo;;true;0
+120;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=21;Shoprite Analakely;;true;0
+120;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0
+120;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=31;Shoprite Analakely;;true;0
+120;Foyer Malbouffe;resume;Burger classic;52500.0;stock=24;Shoprite Analakely;Dojo Mahamasina (d=33);true;4
+140;Foyer Malgache;resume;Cereales lait;35000.0;stock=19;SuperU Andraharo;;true;0
+140;Foyer Europeen;resume;Hen'omby ritra;44500.0;stock=19;Shoprite Analakely;;true;0
+140;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=19;Epicerie Isotry;;true;0
+140;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0
+140;Foyer Defaut;resume;Tsaramaso;50000.0;stock=21;SuperU Andraharo;;true;0
+140;Foyer Malbouffe;resume;Hen'omby ritra;59500.0;stock=17;Epicerie Isotry;Dojo Mahamasina (d=33);true;5
+160;Foyer Malgache;resume;Kitoza grille;35000.0;stock=32;Epicerie Isotry;;true;0
+160;Foyer Europeen;resume;Kitoza grille;48000.0;stock=16;SuperU Andraharo;;true;0
+160;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=21;Shoprite Analakely;;true;0
+160;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+160;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=16;Shoprite Analakely;;true;0
+160;Foyer Malbouffe;resume;Chips et soda;57000.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;6
+180;Foyer Malgache;resume;Poisson grille;35000.0;stock=14;Shoprite Analakely;;true;0
+180;Foyer Europeen;resume;Pasta pesto;57500.0;stock=29;Shoprite Analakely;;true;0
+180;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=19;Epicerie Isotry;;true;0
+180;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+180;Foyer Defaut;resume;Ravitoto aux champignons;50000.0;stock=36;Epicerie Isotry;;true;0
+180;Foyer Malbouffe;resume;Chips et soda;51500.0;stock=21;Shoprite Analakely;Dojo Mahamasina (d=33);true;7
+200;Foyer Malgache;resume;Henakisoa sy voatavo;35000.0;stock=19;Shoprite Analakely;;true;0
+200;Foyer Europeen;resume;Romazava;50000.0;stock=27;Shoprite Analakely;;true;0
+200;Foyer Sans Porc;resume;Tofu saute;50000.0;stock=26;SuperU Andraharo;;true;0
+200;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0
+200;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=25;Shoprite Analakely;;true;0
+200;Foyer Malbouffe;resume;Omelette fromage;57000.0;stock=27;Shoprite Analakely;Dojo Mahamasina (d=33);true;8
+220;Foyer Malgache;resume;Mofo gasy;35000.0;stock=23;Epicerie Isotry;;true;0
+220;Foyer Europeen;resume;Tofu saute;68000.0;stock=27;SuperU Andraharo;;true;0
+220;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=22;Shoprite Analakely;;true;0
+220;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0
+220;Foyer Defaut;resume;Romazava;50000.0;stock=19;Epicerie Isotry;;true;0
+220;Foyer Malbouffe;resume;Burger classic;55000.0;stock=29;Shoprite Analakely;Dojo Mahamasina (d=33);true;9
+240;Foyer Malgache;resume;Yaourt fruits;35000.0;stock=29;SuperU Andraharo;;true;0
+240;Foyer Europeen;resume;Kitoza grille;62000.0;stock=24;Epicerie Isotry;;true;0
+240;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=9;Shoprite Analakely;;true;0
+240;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+240;Foyer Defaut;resume;Ravitoto aux champignons;50000.0;stock=20;Epicerie Isotry;;true;0
+240;Foyer Malbouffe;resume;Saosisy sy oeuf;56500.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;10
+260;Foyer Malgache;resume;Akoho gasy;35000.0;stock=26;Shoprite Analakely;;true;0
+260;Foyer Europeen;resume;Hen'omby ritra;74000.0;stock=19;Epicerie Isotry;;true;0
+260;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=24;Shoprite Analakely;;true;0
+260;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+260;Foyer Defaut;resume;Lasary voatabia;50000.0;stock=25;Epicerie Isotry;;true;0
+260;Foyer Malbouffe;resume;Pizza fromage;57000.0;stock=12;SuperU Andraharo;Dojo Mahamasina (d=33);true;11
+280;Foyer Malgache;resume;Cereales lait;35000.0;stock=17;SuperU Andraharo;;true;0
+280;Foyer Europeen;resume;Tsaramaso;64500.0;stock=22;Epicerie Isotry;;true;0
+280;Foyer Sans Porc;resume;Brochettes zebu;50000.0;stock=26;Shoprite Analakely;;true;0
+280;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0
+280;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0
+280;Foyer Malbouffe;resume;Tsaramaso;52000.0;stock=21;Epicerie Isotry;Dojo Mahamasina (d=33);true;12
+300;Foyer Malgache;resume;Mofo gasy;35000.0;stock=14;Epicerie Isotry;;true;0
+300;Foyer Europeen;resume;Pasta pesto;65000.0;stock=27;Shoprite Analakely;;true;0
+300;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=20;SuperU Andraharo;;true;0
+300;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0
+300;Foyer Defaut;resume;Riz legumes sautes;50000.0;stock=15;Shoprite Analakely;;true;0
+300;Foyer Malbouffe;resume;Hot dog;47000.0;stock=17;SuperU Andraharo;Dojo Mahamasina (d=33);true;13
+320;Foyer Malgache;resume;Poisson grille;35000.0;stock=23;Shoprite Analakely;;true;0
+320;Foyer Europeen;resume;Henakisoa sy voatavo;59500.0;stock=24;Shoprite Analakely;;true;0
+320;Foyer Sans Porc;resume;Salade composee;50000.0;stock=14;SuperU Andraharo;;true;0
+320;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+320;Foyer Defaut;resume;Salade composee;50000.0;stock=21;SuperU Andraharo;;true;0
+320;Foyer Malbouffe;resume;Pizza fromage;54500.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;14
+340;Foyer Malgache;resume;Tsaramaso;35000.0;stock=32;Shoprite Analakely;;true;0
+340;Foyer Europeen;resume;Akoho gasy;63000.0;stock=24;Epicerie Isotry;;true;0
+340;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=19;Epicerie Isotry;;true;0
+340;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+340;Foyer Defaut;resume;Poisson grille;50000.0;stock=32;SuperU Andraharo;;true;0
+340;Foyer Malbouffe;resume;Riz legumes sautes;54000.0;stock=28;Epicerie Isotry;Dojo Mahamasina (d=33);true;15
+360;Foyer Malgache;resume;Poisson grille;35000.0;stock=21;Shoprite Analakely;;true;0
+360;Foyer Europeen;resume;Soupe de legumes;74000.0;stock=32;Shoprite Analakely;;true;0
+360;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=30;Shoprite Analakely;;true;0
+360;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0
+360;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=32;Shoprite Analakely;;true;0
+360;Foyer Malbouffe;resume;Chips et soda;50000.0;stock=25;Shoprite Analakely;Dojo Mahamasina (d=33);true;16
+380;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=11;Shoprite Analakely;;true;0
+380;Foyer Europeen;resume;Smoothie vert;66000.0;stock=25;Epicerie Isotry;;true;0
+380;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=19;Epicerie Isotry;;true;0
+380;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0
+380;Foyer Defaut;resume;Mofo gasy;50000.0;stock=19;Epicerie Isotry;;true;0
+380;Foyer Malbouffe;resume;Lasary voatabia;54500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;17
+400;Foyer Malgache;resume;Mofo gasy;35000.0;stock=28;Epicerie Isotry;;true;0
+400;Foyer Europeen;resume;Ravitoto aux champignons;63500.0;stock=21;Epicerie Isotry;;true;0
+400;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=11;SuperU Andraharo;;true;0
+400;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+400;Foyer Defaut;resume;Brochettes zebu;50000.0;stock=21;Shoprite Analakely;;true;0
+400;Foyer Malbouffe;resume;Yaourt fruits;52000.0;stock=21;Epicerie Isotry;Dojo Mahamasina (d=33);true;18
+420;Foyer Malgache;resume;Soupe de legumes;35000.0;stock=26;Shoprite Analakely;;true;0
+420;Foyer Europeen;resume;Ravitoto aux champignons;52000.0;stock=22;Shoprite Analakely;;true;0
+420;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=16;Shoprite Analakely;;true;0
+420;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+420;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=26;Shoprite Analakely;;true;0
+420;Foyer Malbouffe;resume;Pizza fromage;49500.0;stock=26;Shoprite Analakely;Dojo Mahamasina (d=33);true;19
+440;Foyer Malgache;resume;Poisson grille;35000.0;stock=17;Shoprite Analakely;;true;0
+440;Foyer Europeen;resume;Voanjobory;41000.0;stock=30;Epicerie Isotry;;true;0
+440;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=18;Shoprite Analakely;;true;0
+440;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0
+440;Foyer Defaut;resume;Cereales lait;50000.0;stock=21;SuperU Andraharo;;true;0
+440;Foyer Malbouffe;resume;Chips et soda;48500.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;20
+460;Foyer Malgache;resume;Hen'omby ritra;35000.0;stock=12;Shoprite Analakely;;true;0
+460;Foyer Europeen;resume;Romazava;42000.0;stock=32;Epicerie Isotry;;true;0
+460;Foyer Sans Porc;resume;Riz legumes sautes;50000.0;stock=21;Shoprite Analakely;;true;0
+460;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0
+460;Foyer Defaut;resume;Mofo gasy;50000.0;stock=35;Epicerie Isotry;;true;0
+460;Foyer Malbouffe;resume;Nuggets poulet;57000.0;stock=23;SuperU Andraharo;Dojo Mahamasina (d=33);true;21
+480;Foyer Malgache;resume;Kitoza grille;35000.0;stock=16;Epicerie Isotry;;true;0
+480;Foyer Europeen;resume;Voanjobory;42500.0;stock=26;Shoprite Analakely;;true;0
+480;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=24;SuperU Andraharo;;true;0
+480;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+480;Foyer Defaut;resume;Omelette fromage;50000.0;stock=34;SuperU Andraharo;;true;0
+480;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=25;Shoprite Analakely;Dojo Mahamasina (d=33);true;22
+500;Foyer Malgache;resume;Cereales lait;35000.0;stock=15;SuperU Andraharo;;true;0
+500;Foyer Europeen;resume;Poulet grille legumes;48000.0;stock=25;SuperU Andraharo;;true;0
+500;Foyer Sans Porc;resume;Akoho sy voanio;50000.0;stock=24;Shoprite Analakely;;true;0
+500;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+500;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=20;Shoprite Analakely;;true;0
+500;Foyer Malbouffe;resume;Tsaramaso;57500.0;stock=16;Shoprite Analakely;Dojo Mahamasina (d=33);true;23
+520;Foyer Malgache;resume;Tsaramaso;35000.0;stock=19;Shoprite Analakely;;true;0
+520;Foyer Europeen;resume;Akoho sy voanio;53500.0;stock=31;Shoprite Analakely;;true;0
+520;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=16;Epicerie Isotry;;true;0
+520;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0
+520;Foyer Defaut;resume;Mofo gasy;50000.0;stock=28;Epicerie Isotry;;true;0
+520;Foyer Malbouffe;resume;Chips et soda;53500.0;stock=16;Shoprite Analakely;Dojo Mahamasina (d=33);true;24
+540;Foyer Malgache;resume;Akoho gasy;35000.0;stock=25;Shoprite Analakely;;true;0
+540;Foyer Europeen;resume;Kitoza grille;64500.0;stock=31;Epicerie Isotry;;true;0
+540;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=17;Shoprite Analakely;;true;0
+540;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0
+540;Foyer Defaut;resume;Voanjobory;50000.0;stock=26;SuperU Andraharo;;true;0
+540;Foyer Malbouffe;resume;Nuggets poulet;50500.0;stock=9;SuperU Andraharo;Dojo Mahamasina (d=33);true;25
+560;Foyer Malgache;resume;Pasta pesto;35000.0;stock=28;Shoprite Analakely;;true;0
+560;Foyer Europeen;resume;Henakisoa sy voatavo;75000.0;stock=26;Epicerie Isotry;;true;0
+560;Foyer Sans Porc;resume;Akoho gasy;50000.0;stock=11;SuperU Andraharo;;true;0
+560;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+560;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=34;Shoprite Analakely;;true;0
+560;Foyer Malbouffe;resume;Pizza fromage;49000.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;26
+580;Foyer Malgache;resume;Cereales lait;35000.0;stock=24;SuperU Andraharo;;true;0
+580;Foyer Europeen;resume;Hen'omby ritra;76000.0;stock=23;Epicerie Isotry;;true;0
+580;Foyer Sans Porc;resume;Kitoza grille;50000.0;stock=17;SuperU Andraharo;;true;0
+580;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+580;Foyer Defaut;resume;Cereales lait;50000.0;stock=29;SuperU Andraharo;;true;0
+580;Foyer Malbouffe;resume;Riz legumes sautes;54500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;27
+600;Foyer Malgache;resume;Poulet grille legumes;35000.0;stock=11;SuperU Andraharo;;true;0
+600;Foyer Europeen;resume;Henakisoa sy voatavo;75000.0;stock=28;Shoprite Analakely;;true;0
+600;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=25;Shoprite Analakely;;true;0
+600;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0
+600;Foyer Defaut;resume;Trondro sy voanio;50000.0;stock=22;Shoprite Analakely;;true;0
+600;Foyer Malbouffe;resume;Pizza fromage;47000.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;28
+620;Foyer Malgache;resume;Soupe de legumes;35000.0;stock=25;Shoprite Analakely;;true;0
+620;Foyer Europeen;resume;Poulet grille legumes;78000.0;stock=27;SuperU Andraharo;;true;0
+620;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=15;Epicerie Isotry;;true;0
+620;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0
+620;Foyer Defaut;resume;Akoho sy voanio;50000.0;stock=14;SuperU Andraharo;;true;0
+620;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;29
+640;Foyer Malgache;resume;Akoho gasy;35000.0;stock=29;Shoprite Analakely;;true;0
+640;Foyer Europeen;resume;Pasta pesto;79000.0;stock=39;Shoprite Analakely;;true;0
+640;Foyer Sans Porc;resume;Vary amin anana;50000.0;stock=19;Epicerie Isotry;;true;0
+640;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+640;Foyer Defaut;resume;Salade composee;50000.0;stock=22;SuperU Andraharo;;true;0
+640;Foyer Malbouffe;resume;Burger classic;51500.0;stock=18;Shoprite Analakely;Dojo Mahamasina (d=33);true;30
+660;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=21;Shoprite Analakely;;true;0
+660;Foyer Europeen;resume;Voanjobory;74500.0;stock=20;Shoprite Analakely;;true;0
+660;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=23;Shoprite Analakely;;true;0
+660;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+660;Foyer Defaut;resume;Ravitoto;50000.0;stock=22;Epicerie Isotry;;true;0
+660;Foyer Malbouffe;resume;Saosisy sy oeuf;56000.0;stock=17;Shoprite Analakely;Dojo Mahamasina (d=33);true;31
+680;Foyer Malgache;resume;Pasta pesto;35000.0;stock=31;Shoprite Analakely;;true;0
+680;Foyer Europeen;resume;Akoho gasy;73500.0;stock=23;Epicerie Isotry;;true;0
+680;Foyer Sans Porc;resume;Tofu saute;50000.0;stock=24;SuperU Andraharo;;true;0
+680;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;Epicerie Isotry;;true;0
+680;Foyer Defaut;resume;Voanjobory;50000.0;stock=30;SuperU Andraharo;;true;0
+680;Foyer Malbouffe;resume;Nuggets poulet;55000.0;stock=17;SuperU Andraharo;Dojo Mahamasina (d=33);true;32
+700;Foyer Malgache;resume;Poulet grille legumes;35000.0;stock=26;SuperU Andraharo;;true;0
+700;Foyer Europeen;resume;Pasta pesto;75000.0;stock=37;Shoprite Analakely;;true;0
+700;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=11;Epicerie Isotry;;true;0
+700;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;SuperU Andraharo;;true;0
+700;Foyer Defaut;resume;Poulet grille legumes;50000.0;stock=19;SuperU Andraharo;;true;0
+700;Foyer Malbouffe;resume;Chips et soda;52000.0;stock=21;Shoprite Analakely;Dojo Mahamasina (d=33);true;33
+720;Foyer Malgache;resume;Brochettes zebu;35000.0;stock=19;Shoprite Analakely;;true;0
+720;Foyer Europeen;resume;Riz legumes sautes;58500.0;stock=23;Shoprite Analakely;;true;0
+720;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=25;Shoprite Analakely;;true;0
+720;Foyer Vegan;resume;Tsaramaso;30000.0;stock=24;Shoprite Analakely;;true;0
+720;Foyer Defaut;resume;Poisson grille;50000.0;stock=21;SuperU Andraharo;;true;0
+720;Foyer Malbouffe;resume;Pizza fromage;54000.0;stock=14;Shoprite Analakely;Dojo Mahamasina (d=33);true;34
+740;Foyer Malgache;resume;Trondro sy voanio;35000.0;stock=23;Shoprite Analakely;;true;0
+740;Foyer Europeen;resume;Akoho sy voanio;72500.0;stock=13;Shoprite Analakely;;true;0
+740;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=24;Shoprite Analakely;;true;0
+740;Foyer Vegan;resume;Tsaramaso;30000.0;stock=21;Shoprite Analakely;;true;0
+740;Foyer Defaut;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0
+740;Foyer Malbouffe;resume;Burger classic;47000.0;stock=22;Shoprite Analakely;Dojo Mahamasina (d=33);true;35
+760;Foyer Malgache;resume;Cereales lait;35000.0;stock=23;SuperU Andraharo;;true;0
+760;Foyer Europeen;resume;Kitoza grille;65500.0;stock=19;Epicerie Isotry;;true;0
+760;Foyer Sans Porc;resume;Poulet grille legumes;50000.0;stock=25;SuperU Andraharo;;true;0
+760;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=21;SuperU Andraharo;;true;0
+760;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=35;SuperU Andraharo;;true;0
+760;Foyer Malbouffe;resume;Pizza fromage;54000.0;stock=23;Shoprite Analakely;Dojo Mahamasina (d=33);true;36
+780;Foyer Malgache;resume;Salade composee;35000.0;stock=28;SuperU Andraharo;;true;0
+780;Foyer Europeen;resume;Tofu saute;74000.0;stock=28;SuperU Andraharo;;true;0
+780;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=21;Epicerie Isotry;;true;0
+780;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=22;Epicerie Isotry;;true;0
+780;Foyer Defaut;resume;Cereales lait;50000.0;stock=19;SuperU Andraharo;;true;0
+780;Foyer Malbouffe;resume;Burger classic;57000.0;stock=18;SuperU Andraharo;Dojo Mahamasina (d=33);true;37

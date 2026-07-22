@@ -154,7 +154,7 @@ global {
 				+ mag_nom + ";"
 				+ derniere_salle_sport + ";"
 				+ necessite_achat + ";" + alertes_nutritionnelles;
-			save ligne to: "../results/arbitrage_log.csv" format: "text" rewrite: false;
+		save (ligne + "\n") to: "../results/arbitrage_log.csv" format: "text" rewrite: false;
 		}
 	}
 
@@ -166,6 +166,6 @@ global {
 			+ evitements_hist_plan + ";"
 			+ repas_malbouffe_plan + ";" + repas_equilibre_plan + ";"
 			+ rejets_culture_plan + ";" + rejets_budget_plan;
-		save ligne to: "../results/conflits_log.csv" format: "text" rewrite: false;
+		save (ligne + "\n") to: "../results/conflits_log.csv" format: "text" rewrite: false;
 	}
 }
