@@ -1,6 +1,6 @@
 /**
  * Foyers + pipeline d'agents de decision.
- * Depend de Entites.gaml (plat_item, magasin, salle_de_sport, ingredient_stock).
+ * Depend de Entites.gaml. Importe via LaokaLab / InitMonde / CycleSimu.
  */
 model Agents
 
@@ -92,6 +92,23 @@ species agent_decision {
 		return false;
 	}
 
+	/* Cout effectif = catalogue x personnes x inflation. */
+	float cout_repas (plat_item pi, int personnes) {
+		return pi.cout_estime * personnes * multiplicateur_prix;
+	}
+
+	list retirer_index (list xs, int idx) {
+		list out <- [];
+		int j <- 0;
+		loop x over: xs {
+			if j != idx {
+				out <- out + [x];
+			}
+			j <- j + 1;
+		}
+		return out;
+	}
+
 	list trier_plats_par_cout (list candidats) {
 		list triee <- [];
 		list reste <- list(candidats);
@@ -108,15 +125,7 @@ species agent_decision {
 				i <- i + 1;
 			}
 			triee <- triee + [meilleur];
-			list nouveau_reste <- [];
-			int j <- 0;
-			loop p over: reste {
-				if j != idx_m {
-					nouveau_reste <- nouveau_reste + [p];
-				}
-				j <- j + 1;
-			}
-			reste <- nouveau_reste;
+			reste <- retirer_index(reste, idx_m);
 		}
 		return triee;
 	}
@@ -252,9 +261,8 @@ species agent_provisions parent: agent_decision {
 
 species agent_budget parent: agent_decision {
 
-	/* Vote soft : favorise les plats sous enveloppe (prix x inflation). */
 	float voter_plat (plat_item pi, float enveloppe) {
-		float cout <- pi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix;
+		float cout <- cout_repas(pi, mon_foyer.nb_personnes);
 		float plafond_souple <- enveloppe * (1.0 + tolerance_depassement_budget);
 		if cout <= enveloppe {
 			return 1.0 - (cout / (enveloppe + 1.0));
@@ -269,7 +277,7 @@ species agent_budget parent: agent_decision {
 		list ok <- [];
 		loop p over: candidats {
 			plat_item pi <- p as plat_item;
-			if pi.cout_estime * personnes * multiplicateur_prix <= budget_dispo {
+			if cout_repas(pi, personnes) <= budget_dispo {
 				ok <- ok + [pi];
 			}
 		}
@@ -277,12 +285,11 @@ species agent_budget parent: agent_decision {
 			float plafond_souple <- budget_dispo * (1.0 + tolerance_depassement_budget);
 			loop p over: candidats {
 				plat_item pi <- p as plat_item;
-				if pi.cout_estime * personnes * multiplicateur_prix <= plafond_souple {
+				if cout_repas(pi, personnes) <= plafond_souple {
 					ok <- ok + [pi];
 				}
 			}
 		}
-		/* Dernier recours : le moins cher (evite ECHEC_ARBITRAGE systematique en fin de periode). */
 		if length(ok) = 0 and length(candidats) > 0 {
 			return trier_plats_par_cout(candidats);
 		}
@@ -397,6 +404,17 @@ species agent_nutrition parent: agent_decision {
 
 species agent_historique parent: agent_decision {
 
+	list noms_interdits {
+		list interdits <- [];
+		loop r over: mon_foyer.historique_repas {
+			interdits <- interdits + [string(map(r)["nom_plat"])];
+		}
+		loop r over: mon_foyer.plan_courant {
+			interdits <- interdits + [string(map(r)["nom_plat"])];
+		}
+		return interdits;
+	}
+
 	float voter_plat (plat_item pi, list interdits) {
 		if liste_contient(interdits, pi.nom_plat) {
 			return -1.0;
@@ -405,15 +423,7 @@ species agent_historique parent: agent_decision {
 	}
 
 	list eviter_repetitions (list candidats) {
-		list interdits <- [];
-		loop r over: mon_foyer.historique_repas {
-			map rm <- map(r);
-			interdits <- interdits + [string(rm["nom_plat"])];
-		}
-		loop r over: mon_foyer.plan_courant {
-			map rm <- map(r);
-			interdits <- interdits + [string(rm["nom_plat"])];
-		}
+		list interdits <- noms_interdits();
 		list sans_rep <- [];
 		loop p over: candidats {
 			plat_item pi <- p as plat_item;
@@ -434,6 +444,17 @@ species agent_historique parent: agent_decision {
 /* ========== Logistique ========== */
 species agent_logistique parent: agent_decision {
 
+	float distance_vers (point dest) {
+		float plen <- mon_foyer.location distance_to dest;
+		if reseau_quartier != nil {
+			path chemin <- path_between(reseau_quartier, mon_foyer.location, dest);
+			if chemin != nil {
+				plen <- chemin.shape.perimeter;
+			}
+		}
+		return plen;
+	}
+
 	map trouver_magasin_pour (list ingredients_manquants) {
 		if length(ingredients_manquants) = 0 {
 			return ["magasin"::"", "distance"::0.0, "chemin_longueur"::0.0];
@@ -449,13 +470,7 @@ species agent_logistique parent: agent_decision {
 					couverture <- couverture + 1;
 				}
 			}
-			float plen <- myself.mon_foyer distance_to self;
-			if reseau_quartier != nil {
-				path chemin <- path_between(reseau_quartier, myself.mon_foyer.location, self.location);
-				if chemin != nil {
-					plen <- chemin.shape.perimeter;
-				}
-			}
+			float plen <- myself.distance_vers(self.location);
 			if (couverture > meilleur_couverture) or (couverture = meilleur_couverture and plen < meilleure_path) {
 				meilleur_couverture <- couverture;
 				meilleure_path <- plen;
@@ -479,18 +494,14 @@ species agent_logistique parent: agent_decision {
 	action trouver_salle_sport {
 		salle_de_sport s <- salle_de_sport closest_to mon_foyer;
 		if s != nil {
-			float plen <- mon_foyer distance_to s;
-			if reseau_quartier != nil {
-				path chemin <- path_between(reseau_quartier, mon_foyer.location, s.location);
-				if chemin != nil {
-					plen <- chemin.shape.perimeter;
-				}
-			}
+			float plen <- distance_vers(s.location);
 			mon_foyer.salle_cible <- s;
 			mon_foyer.derniere_salle_sport <- s.nom + " (d=" + int(plen) + ")";
 		}
 	}
 }
+
+
 
 /* ========== Arbitrage ========== */
 species agent_arbitrage parent: agent_decision {
@@ -568,21 +579,13 @@ species agent_arbitrage parent: agent_decision {
 		int hors_budget <- 0;
 		loop p over: apres_culture {
 			plat_item pi <- p as plat_item;
-			if pi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix > plafond {
+			if cout_repas(pi, mon_foyer.nb_personnes) > plafond {
 				hors_budget <- hors_budget + 1;
 			}
 		}
 		rejets_budget_plan <- rejets_budget_plan + hors_budget;
 
-		list interdits <- [];
-		loop r over: mon_foyer.historique_repas {
-			map rm <- map(r);
-			interdits <- interdits + [string(rm["nom_plat"])];
-		}
-		loop r over: mon_foyer.plan_courant {
-			map rm <- map(r);
-			interdits <- interdits + [string(rm["nom_plat"])];
-		}
+		list interdits <- mon_foyer.mon_historique.noms_interdits();
 
 		plat_item choisi;
 		string justification_finale <- "";
@@ -682,7 +685,7 @@ species agent_arbitrage parent: agent_decision {
 		ask mon_foyer.mon_nutrition {
 			do enregistrer_choix(choisi);
 		}
-		float cout_total <- choisi.cout_estime * mon_foyer.nb_personnes * multiplicateur_prix;
+		float cout_total <- cout_repas(choisi, mon_foyer.nb_personnes);
 		return [
 			"type_repas"::type_r,
 			"nom_plat"::choisi.nom_plat,
@@ -698,7 +701,6 @@ species agent_arbitrage parent: agent_decision {
 	}
 
 	float score_negociation (plat_item pi, float enveloppe, list interdits) {
-		/* Negociation SMA : chaque agent soft vote via ask, l'arbitrage ponder. */
 		float vote_b <- 0.0;
 		float vote_n <- 0.0;
 		float vote_h <- 0.0;
@@ -741,15 +743,7 @@ species agent_arbitrage parent: agent_decision {
 				i <- i + 1;
 			}
 			triee <- triee + [meilleur];
-			list nr <- [];
-			int j <- 0;
-			loop e over: reste {
-				if j != idx_m {
-					nr <- nr + [e];
-				}
-				j <- j + 1;
-			}
-			reste <- nr;
+			reste <- retirer_index(reste, idx_m);
 		}
 		return triee;
 	}
@@ -773,15 +767,7 @@ species agent_arbitrage parent: agent_decision {
 				i <- i + 1;
 			}
 			triee <- triee + [meilleur];
-			list nr <- [];
-			int j <- 0;
-			loop e over: reste {
-				if j != idx_m {
-					nr <- nr + [e];
-				}
-				j <- j + 1;
-			}
-			reste <- nr;
+			reste <- retirer_index(reste, idx_m);
 		}
 		return triee;
 	}
@@ -802,7 +788,9 @@ species agent_arbitrage parent: agent_decision {
 	}
 }
 
-/* ========== Household (apres les agents qu'il reference) ========== */
+
+
+/* ========== Household ========== */
 species household {
 	string nom_foyer <- "Foyer";
 	string label_carte <- "Foyer";
@@ -843,41 +831,30 @@ species household {
 	image_file icone_culture <- image_file("../includes/icons/foyer_culture.png");
 
 	action creer_agents_decision {
-		create agent_provisions number: 1 returns: ap {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_provisions number: 1 returns: ap { mon_foyer <- myself; location <- myself.location; }
 		mon_provisions <- ap[0];
-		create agent_budget number: 1 returns: ab {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_budget number: 1 returns: ab { mon_foyer <- myself; location <- myself.location; }
 		mon_budget <- ab[0];
-		create agent_culture_restriction number: 1 returns: ac {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_culture_restriction number: 1 returns: ac { mon_foyer <- myself; location <- myself.location; }
 		mon_culture <- ac[0];
-		create agent_nutrition number: 1 returns: an {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_nutrition number: 1 returns: an { mon_foyer <- myself; location <- myself.location; }
 		mon_nutrition <- an[0];
-		create agent_historique number: 1 returns: ah {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_historique number: 1 returns: ah { mon_foyer <- myself; location <- myself.location; }
 		mon_historique <- ah[0];
-		create agent_logistique number: 1 returns: al {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_logistique number: 1 returns: al { mon_foyer <- myself; location <- myself.location; }
 		mon_logistique <- al[0];
-		create agent_arbitrage number: 1 returns: aa {
-			mon_foyer <- myself;
-			location <- myself.location;
-		}
+		create agent_arbitrage number: 1 returns: aa { mon_foyer <- myself; location <- myself.location; }
 		mon_arbitrage <- aa[0];
+	}
+
+	int duree_stock {
+		if storage_mode = "frigidaire" {
+			return 8;
+		}
+		if storage_mode = "panier" {
+			return 3;
+		}
+		return 5;
 	}
 
 	action initialiser_provisions (string niveau) {
@@ -894,19 +871,14 @@ species household {
 			base_noms <- ["riz", "huile", "oignon", "tomate", "poulet", "oeuf"];
 			base_qte <- [5.0, 2.0, 3.0, 3.0, 2.0, 6.0];
 		}
+		int duree <- duree_stock();
 		loop i from: 0 to: length(base_noms) - 1 {
 			create ingredient_stock number: 1 returns: stocks {
 				nom <- base_noms[i];
 				quantite <- float(base_qte[i]);
 				provenance <- myself.storage_mode;
 				foyer_proprietaire <- myself;
-				if myself.storage_mode = "frigidaire" {
-					date_peremption <- 8;
-				} else if myself.storage_mode = "panier" {
-					date_peremption <- 3;
-				} else {
-					date_peremption <- 5;
-				}
+				date_peremption <- duree;
 			}
 			provisions <- provisions + stocks;
 		}

@@ -1,129 +1,113 @@
 cycle;nom_foyer;type;plat_ou_resume;cout;detail;magasin;salle;achat;alertes
 0;Foyer Malgache;resume;Romazava;35000.0;stock=12;Epicerie Isotry;;true;0
-0;Foyer Europeen;resume;Omelette fromage;53767.5;stock=20;SuperU Andraharo;;true;0
-0;Foyer Sans Porc;resume;Romazava;50000.0;stock=12;Epicerie Isotry;;true;0
+0;Foyer Europeen;resume;Hen'omby ritra;-7137.5;stock=14;Shoprite Analakely;;true;0
+0;Foyer Sans Porc;resume;Kitoza grille;50000.0;stock=9;Epicerie Isotry;;true;0
 0;Foyer Vegan;resume;Mofo gasy;30000.0;stock=36;Epicerie Isotry;;true;0
-0;Foyer Defaut;resume;Omelette fromage;50000.0;stock=12;SuperU Andraharo;;true;0
-0;Foyer Malbouffe;resume;Frites mayo;53868.0;stock=18;SuperU Andraharo;Fitness Park Antaninarenina (d=1068);true;1
-0;Foyer Etudiant;resume;Romazava;20000.0;stock=12;Epicerie Isotry;;true;0
-0;Foyer Sportif;resume;Kitoza grille;55000.0;stock=21;SuperU Andraharo;;true;0
+0;Foyer Defaut;resume;Anana sy voatavo;41254.0;stock=17;Shoprite Analakely;;true;0
+0;Foyer Malbouffe;resume;Frites mayo;8541.0;stock=17;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;1
+0;Foyer Etudiant;resume;Ravitoto;20000.0;stock=11;Epicerie Isotry;;true;0
+0;Foyer Sportif;resume;Mofo gasy;43892.0;stock=29;Epicerie Isotry;;true;0
 20;Foyer Malgache;resume;Anana sy voatavo;35000.0;stock=25;Shoprite Analakely;;true;0
-20;Foyer Europeen;resume;Ravitoto;80000.0;stock=25;Epicerie Isotry;;true;0
-20;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=21;Epicerie Isotry;;true;0
+20;Foyer Europeen;resume;Akoho sy voanio;-477.3550000000978;stock=17;Shoprite Analakely;;true;0
+20;Foyer Sans Porc;resume;Soupe de legumes;50000.0;stock=21;Epicerie Isotry;;true;0
 20;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=47;Epicerie Isotry;;true;0
-20;Foyer Defaut;resume;Kabaka;50000.0;stock=13;Shoprite Analakely;;true;0
-20;Foyer Malbouffe;resume;Vary amin anana;60000.0;stock=25;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;2
-20;Foyer Etudiant;resume;Anana sy voatavo;20000.0;stock=25;Shoprite Analakely;;true;0
-20;Foyer Sportif;resume;Kabaka;55000.0;stock=10;Shoprite Analakely;;true;0
+20;Foyer Defaut;resume;Henakisoa sy voatavo;50000.0;stock=23;Shoprite Analakely;;true;0
+20;Foyer Malbouffe;resume;Koba;21262.799999999996;stock=31;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;2
+20;Foyer Etudiant;resume;Hen'omby ritra;20000.0;stock=13;Shoprite Analakely;;true;0
+20;Foyer Sportif;resume;Bouillon de zebu;55000.0;stock=20;SuperU Andraharo;;true;0
 40;Foyer Malgache;resume;Akoho ritra;35000.0;stock=31;Shoprite Analakely;;true;0
-40;Foyer Europeen;resume;Brochettes zebu;80000.0;stock=31;Shoprite Analakely;;true;0
-40;Foyer Sans Porc;resume;Haricots rouges riz;50000.0;stock=21;Epicerie Isotry;;true;0
+40;Foyer Europeen;resume;Koba;-2824.1079375001427;stock=26;Shoprite Analakely;;true;0
+40;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=23;Epicerie Isotry;;true;0
 40;Foyer Vegan;resume;Anana sy voatavo;30000.0;stock=23;Epicerie Isotry;;true;0
-40;Foyer Defaut;resume;Akoho sy voanio;50000.0;stock=22;Shoprite Analakely;;true;0
-40;Foyer Malbouffe;resume;Tsaramaso;60000.0;stock=18;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;3
-40;Foyer Etudiant;resume;Akoho ritra;20000.0;stock=31;Shoprite Analakely;;true;0
-40;Foyer Sportif;resume;Romazava;55000.0;stock=12;Shoprite Analakely;;true;0
+40;Foyer Defaut;resume;Romazava;50000.0;stock=23;Shoprite Analakely;;true;0
+40;Foyer Malbouffe;resume;Tsaramaso;25821.577950000035;stock=28;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;3
+40;Foyer Etudiant;resume;Poisson grille;20000.0;stock=22;Shoprite Analakely;;true;0
+40;Foyer Sportif;resume;Riz legumes sautes;55000.0;stock=23;Shoprite Analakely;;true;0
 60;Foyer Malgache;resume;Cereales lait;35000.0;stock=26;Shoprite Analakely;;true;0
-60;Foyer Europeen;resume;Voanjobory;80000.0;stock=32;Shoprite Analakely;;true;0
-60;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=30;Epicerie Isotry;;true;0
+60;Foyer Europeen;resume;Romazava;-1620.1280877501558;stock=30;Epicerie Isotry;;true;0
+60;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=20;Epicerie Isotry;;true;0
 60;Foyer Vegan;resume;Tsaramaso;30000.0;stock=17;Epicerie Isotry;;true;0
-60;Foyer Defaut;resume;Soupe de legumes;50000.0;stock=23;Shoprite Analakely;;true;0
-60;Foyer Malbouffe;resume;Poulet grille legumes;60000.0;stock=14;SuperU Andraharo;Fitness Park Antaninarenina (d=1068);true;4
-60;Foyer Etudiant;resume;Cereales lait;20000.0;stock=26;Shoprite Analakely;;true;0
-60;Foyer Sportif;resume;Bouillon de zebu;55000.0;stock=21;Shoprite Analakely;;true;0
+60;Foyer Defaut;resume;Riz cantonais;50000.0;stock=18;Shoprite Analakely;;true;0
+60;Foyer Malbouffe;resume;Anana sy voatavo;39374.4290450625;stock=26;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;4
+60;Foyer Etudiant;resume;Salade de fruits;20000.0;stock=24;Shoprite Analakely;;true;0
+60;Foyer Sportif;resume;Poisson grille;55000.0;stock=35;SuperU Andraharo;;true;0
 80;Foyer Malgache;resume;Tsaramaso;35000.0;stock=21;Shoprite Analakely;;true;0
-80;Foyer Europeen;resume;Cereales lait;80000.0;stock=23;Shoprite Analakely;;true;0
-80;Foyer Sans Porc;resume;Akoho ritra;50000.0;stock=20;Shoprite Analakely;;true;0
+80;Foyer Europeen;resume;Hen'omby ritra;-14876.27150910937;stock=27;Shoprite Analakely;;true;0
+80;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=19;Epicerie Isotry;;true;0
 80;Foyer Vegan;resume;Soupe de legumes;30000.0;stock=27;Epicerie Isotry;;true;0
-80;Foyer Defaut;resume;Omelette fromage;50000.0;stock=28;SuperU Andraharo;;true;0
-80;Foyer Malbouffe;resume;Romazava;60000.0;stock=19;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;5
-80;Foyer Etudiant;resume;Tsaramaso;20000.0;stock=21;Shoprite Analakely;;true;0
-80;Foyer Sportif;resume;Anana sy voatavo;55000.0;stock=21;Shoprite Analakely;;true;0
+80;Foyer Defaut;resume;Kabaka;50000.0;stock=27;Shoprite Analakely;;true;0
+80;Foyer Malbouffe;resume;Saosisy sy oeuf;43247.58211494466;stock=35;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;5
+80;Foyer Etudiant;resume;Poulet grille legumes;20000.0;stock=27;SuperU Andraharo;;true;0
+80;Foyer Sportif;resume;Akoho sy voanio;55000.0;stock=32;Shoprite Analakely;;true;0
 100;Foyer Malgache;resume;Ravitoto;35000.0;stock=14;Shoprite Analakely;;true;0
-100;Foyer Europeen;resume;Yaourt fruits;80000.0;stock=27;Epicerie Isotry;;true;0
-100;Foyer Sans Porc;resume;Cereales lait;50000.0;stock=12;Shoprite Analakely;;true;0
+100;Foyer Europeen;resume;Kitoza grille;21762.462554264843;stock=18;Shoprite Analakely;;true;0
+100;Foyer Sans Porc;resume;Cereales lait;50000.0;stock=25;Epicerie Isotry;;true;0
 100;Foyer Vegan;resume;Lasary voatabia;30000.0;stock=29;Epicerie Isotry;;true;0
-100;Foyer Defaut;resume;Kabaka;50000.0;stock=18;Shoprite Analakely;;true;0
-100;Foyer Malbouffe;resume;Vary amin anana;60000.0;stock=34;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;6
-100;Foyer Etudiant;resume;Ravitoto;20000.0;stock=13;Shoprite Analakely;;true;0
-100;Foyer Sportif;resume;Cereales lait;55000.0;stock=21;SuperU Andraharo;;true;0
+100;Foyer Defaut;resume;Hen'omby ritra;50000.0;stock=25;Shoprite Analakely;;true;0
+100;Foyer Malbouffe;resume;Nuggets poulet;50840.34673117564;stock=25;SuperU Andraharo;;true;5
+100;Foyer Etudiant;resume;Mofo gasy;20000.0;stock=19;Shoprite Analakely;;true;0
+100;Foyer Sportif;resume;Kitoza grille;55000.0;stock=27;SuperU Andraharo;;true;0
 120;Foyer Malgache;resume;Ravitoto aux champignons;35000.0;stock=20;Epicerie Isotry;;true;0
-120;Foyer Europeen;resume;Koba;80000.0;stock=34;Shoprite Analakely;;true;0
-120;Foyer Sans Porc;resume;Lasary voatabia;50000.0;stock=9;Epicerie Isotry;;true;0
+120;Foyer Europeen;resume;Poulet curry;9175.42629510659;stock=13;Shoprite Analakely;;true;0
+120;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=20;Shoprite Analakely;;true;0
 120;Foyer Vegan;resume;Tsaramaso;30000.0;stock=20;Epicerie Isotry;;true;0
-120;Foyer Defaut;resume;Riz cantonais;50000.0;stock=30;Shoprite Analakely;;true;0
-120;Foyer Malbouffe;resume;Ravitoto aux champignons;60000.0;stock=29;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;7
-120;Foyer Etudiant;resume;Ravitoto aux champignons;20000.0;stock=23;Epicerie Isotry;;true;0
-120;Foyer Sportif;resume;Soupe de legumes;55000.0;stock=20;Shoprite Analakely;;true;0
+120;Foyer Defaut;resume;Cereales lait;50000.0;stock=24;Shoprite Analakely;;true;0
+120;Foyer Malbouffe;resume;Saosisy sy oeuf;55560.934039971486;stock=33;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;6
+120;Foyer Etudiant;resume;Ravitoto aux champignons;20000.0;stock=21;Epicerie Isotry;;true;0
+120;Foyer Sportif;resume;Kabaka;55000.0;stock=22;Epicerie Isotry;;true;0
 140;Foyer Malgache;resume;Anana sy voatavo;35000.0;stock=27;Shoprite Analakely;;true;0
-140;Foyer Europeen;resume;Romazava;80000.0;stock=26;Shoprite Analakely;;true;0
-140;Foyer Sans Porc;resume;Bouillon de zebu;50000.0;stock=17;Shoprite Analakely;;true;0
+140;Foyer Europeen;resume;Kitoza grille;36888.60534138937;stock=24;Shoprite Analakely;;true;0
+140;Foyer Sans Porc;resume;Vary sosoa;50000.0;stock=19;Epicerie Isotry;;true;0
 140;Foyer Vegan;resume;Tsaramaso;30000.0;stock=17;Epicerie Isotry;;true;0
-140;Foyer Defaut;resume;Brochettes zebu;50000.0;stock=34;Shoprite Analakely;;true;0
-140;Foyer Malbouffe;resume;Ravitoto;60000.0;stock=33;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;8
-140;Foyer Etudiant;resume;Anana sy voatavo;20000.0;stock=27;Shoprite Analakely;;true;0
-140;Foyer Sportif;resume;Poulet grille legumes;55000.0;stock=29;SuperU Andraharo;;true;0
+140;Foyer Defaut;resume;Romazava;50000.0;stock=24;Shoprite Analakely;;true;0
+140;Foyer Malbouffe;resume;Salade composee;54985.306248113964;stock=27;Epicerie Isotry;;true;6
+140;Foyer Etudiant;resume;Salade de riz;20000.0;stock=17;Shoprite Analakely;;true;0
+140;Foyer Sportif;resume;Mofo gasy;55000.0;stock=17;Epicerie Isotry;;true;0
 160;Foyer Malgache;resume;Hen'omby ritra;35000.0;stock=20;Shoprite Analakely;;true;0
-160;Foyer Europeen;resume;Vary sosoa;80000.0;stock=34;Shoprite Analakely;;true;0
-160;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=21;Shoprite Analakely;;true;0
+160;Foyer Europeen;resume;Koba;9916.271704044135;stock=24;Shoprite Analakely;;true;0
+160;Foyer Sans Porc;resume;Yaourt fruits;50000.0;stock=28;Epicerie Isotry;;true;0
 160;Foyer Vegan;resume;Salade composee;30000.0;stock=32;SuperU Andraharo;;true;0
-160;Foyer Defaut;resume;Kabaka;50000.0;stock=33;Shoprite Analakely;;true;0
-160;Foyer Malbouffe;resume;Vary amin anana;60000.0;stock=31;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;9
-160;Foyer Etudiant;resume;Akoho gasy;20000.0;stock=22;Shoprite Analakely;;true;0
-160;Foyer Sportif;resume;Soupe de legumes;55000.0;stock=29;SuperU Andraharo;;true;0
+160;Foyer Defaut;resume;Riz legumes sautes;50000.0;stock=16;Shoprite Analakely;;true;0
+160;Foyer Malbouffe;resume;Saosisy sy oeuf;52928.75233275052;stock=32;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;7
+160;Foyer Etudiant;resume;Yaourt fruits;20000.0;stock=30;SuperU Andraharo;;true;0
+160;Foyer Sportif;resume;Cereales lait;55000.0;stock=14;SuperU Andraharo;;true;0
 180;Foyer Malgache;resume;Koba;35000.0;stock=24;Shoprite Analakely;;true;0
-180;Foyer Europeen;resume;Akoho gasy;80000.0;stock=20;Shoprite Analakely;;true;0
-180;Foyer Sans Porc;resume;Salade de fruits;50000.0;stock=17;Epicerie Isotry;;true;0
+180;Foyer Europeen;resume;Haricots rouges riz;21680.80523120499;stock=19;Shoprite Analakely;;true;0
+180;Foyer Sans Porc;resume;Kabaka;50000.0;stock=20;Shoprite Analakely;;true;0
 180;Foyer Vegan;resume;Koba;30000.0;stock=22;Epicerie Isotry;;true;0
-180;Foyer Defaut;resume;Poulet grille legumes;50000.0;stock=23;SuperU Andraharo;;true;0
-180;Foyer Malbouffe;resume;Haricots rouges riz;60000.0;stock=30;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;10
-180;Foyer Etudiant;resume;Salade de fruits;20000.0;stock=25;Epicerie Isotry;;true;0
-180;Foyer Sportif;resume;Tsaramaso;55000.0;stock=36;Epicerie Isotry;;true;0
+180;Foyer Defaut;resume;Mofo gasy;50000.0;stock=24;Shoprite Analakely;;true;0
+180;Foyer Malbouffe;resume;Nuggets poulet;53159.08189868776;stock=32;Shoprite Analakely;;true;7
+180;Foyer Etudiant;resume;Kabaka;20000.0;stock=29;Shoprite Analakely;;true;0
+180;Foyer Sportif;resume;Trondro sy voanio;55000.0;stock=22;SuperU Andraharo;;true;0
 200;Foyer Malgache;resume;Ravitoto aux champignons;35000.0;stock=32;Epicerie Isotry;;true;0
-200;Foyer Europeen;resume;Tsaramaso;80000.0;stock=29;Shoprite Analakely;;true;0
-200;Foyer Sans Porc;resume;Anana sy voatavo;50000.0;stock=10;Epicerie Isotry;;true;0
+200;Foyer Europeen;resume;Ravitoto aux champignons;26192.47184728446;stock=23;Epicerie Isotry;;true;0
+200;Foyer Sans Porc;resume;Bouillon de zebu;50000.0;stock=36;Shoprite Analakely;;true;0
 200;Foyer Vegan;resume;Tofu saute;30000.0;stock=14;SuperU Andraharo;;true;0
-200;Foyer Defaut;resume;Mofo gasy;50000.0;stock=20;Shoprite Analakely;;true;0
-200;Foyer Malbouffe;resume;Ravitoto aux champignons;60000.0;stock=25;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;11
-200;Foyer Etudiant;resume;Salade composee;20000.0;stock=28;Shoprite Analakely;;true;0
-200;Foyer Sportif;resume;Riz legumes sautes;55000.0;stock=27;SuperU Andraharo;;true;0
+200;Foyer Defaut;resume;Cereales lait;50000.0;stock=22;Shoprite Analakely;;true;0
+200;Foyer Malbouffe;resume;Nuggets poulet;53162.36519610417;stock=24;SuperU Andraharo;Fitness Park Antaninarenina (d=1068);true;8
+200;Foyer Etudiant;resume;Poulet grille legumes;20000.0;stock=21;SuperU Andraharo;;true;0
+200;Foyer Sportif;resume;Cereales lait;55000.0;stock=27;Shoprite Analakely;;true;0
 220;Foyer Malgache;resume;Yaourt fruits;35000.0;stock=25;Epicerie Isotry;;true;0
-220;Foyer Europeen;resume;Brochettes zebu;80000.0;stock=22;Shoprite Analakely;;true;0
-220;Foyer Sans Porc;resume;Salade de fruits;50000.0;stock=25;Shoprite Analakely;;true;0
+220;Foyer Europeen;resume;Ravitoto aux champignons;27198.48889254569;stock=19;Shoprite Analakely;;true;0
+220;Foyer Sans Porc;resume;Hen'omby ritra;50000.0;stock=17;Epicerie Isotry;;true;0
 220;Foyer Vegan;resume;Tofu saute;30000.0;stock=15;Shoprite Analakely;;true;0
-220;Foyer Defaut;resume;Tsaramaso;50000.0;stock=24;Shoprite Analakely;;true;0
-220;Foyer Malbouffe;resume;Brochettes zebu;60000.0;stock=27;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;12
-220;Foyer Etudiant;resume;Trondro sy voanio;20000.0;stock=25;Shoprite Analakely;;true;0
-220;Foyer Sportif;resume;Cereales lait;55000.0;stock=26;SuperU Andraharo;;true;0
+220;Foyer Defaut;resume;Kabaka;50000.0;stock=19;Shoprite Analakely;;true;0
+220;Foyer Malbouffe;resume;Saosisy sy oeuf;53784.16825356702;stock=32;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;9
+220;Foyer Etudiant;resume;Koba;20000.0;stock=34;Shoprite Analakely;;true;0
+220;Foyer Sportif;resume;Salade composee;55000.0;stock=26;SuperU Andraharo;;true;0
 240;Foyer Malgache;resume;Haricots rouges riz;35000.0;stock=23;Shoprite Analakely;;true;0
-240;Foyer Europeen;resume;Kabaka;80000.0;stock=23;Shoprite Analakely;;true;0
-240;Foyer Sans Porc;resume;Kabaka;50000.0;stock=18;Shoprite Analakely;;true;0
+240;Foyer Europeen;resume;Voanjobory;26368.865001093174;stock=20;Shoprite Analakely;;true;0
+240;Foyer Sans Porc;resume;Pasta pesto;50000.0;stock=25;Shoprite Analakely;;true;0
 240;Foyer Vegan;resume;Soupe de legumes;30000.0;stock=22;Epicerie Isotry;;true;0
-240;Foyer Defaut;resume;Salade de fruits;50000.0;stock=31;Epicerie Isotry;;true;0
-240;Foyer Malbouffe;resume;Omelette fromage;60000.0;stock=26;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;13
-240;Foyer Etudiant;resume;Salade de fruits;20000.0;stock=23;Epicerie Isotry;;true;0
-240;Foyer Sportif;resume;Kabaka;55000.0;stock=34;Epicerie Isotry;;true;0
+240;Foyer Defaut;resume;Vary sosoa;50000.0;stock=24;Shoprite Analakely;;true;0
+240;Foyer Malbouffe;resume;Lasary voatabia;53215.29964502381;stock=21;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;10
+240;Foyer Etudiant;resume;Ravitoto;20000.0;stock=35;Epicerie Isotry;;true;0
+240;Foyer Sportif;resume;Cereales lait;55000.0;stock=33;SuperU Andraharo;;true;0
 260;Foyer Malgache;resume;Cereales lait;35000.0;stock=20;Shoprite Analakely;;true;0
-260;Foyer Europeen;resume;Kitoza grille;80000.0;stock=26;Epicerie Isotry;;true;0
-260;Foyer Sans Porc;resume;Ravitoto aux champignons;50000.0;stock=25;Epicerie Isotry;;true;0
+260;Foyer Europeen;resume;Hen'omby ritra;16498.667029213153;stock=17;Shoprite Analakely;;true;0
+260;Foyer Sans Porc;resume;Cereales lait;50000.0;stock=17;Epicerie Isotry;;true;0
 260;Foyer Vegan;resume;Mofo gasy;30000.0;stock=23;Epicerie Isotry;;true;0
-260;Foyer Defaut;resume;Akoho sy voanio;50000.0;stock=31;Shoprite Analakely;;true;0
-260;Foyer Malbouffe;resume;Kitoza grille;60000.0;stock=24;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;14
-260;Foyer Etudiant;resume;Cereales lait;20000.0;stock=24;Shoprite Analakely;;true;0
-260;Foyer Sportif;resume;Akoho ritra;55000.0;stock=23;Epicerie Isotry;;true;0
-280;Foyer Malgache;resume;Mofo gasy;35000.0;stock=24;Shoprite Analakely;;true;0
-280;Foyer Europeen;resume;Poulet grille legumes;80000.0;stock=28;SuperU Andraharo;;true;0
-280;Foyer Sans Porc;resume;Mofo gasy;50000.0;stock=26;Epicerie Isotry;;true;0
-280;Foyer Vegan;resume;Lasary voatabia;30000.0;stock=12;Epicerie Isotry;;true;0
-280;Foyer Defaut;resume;Kabaka;50000.0;stock=20;Shoprite Analakely;;true;0
-280;Foyer Malbouffe;resume;Vary amin anana;60000.0;stock=23;Epicerie Isotry;Fitness Park Antaninarenina (d=1068);true;15
-280;Foyer Etudiant;resume;Yaourt fruits;20000.0;stock=26;SuperU Andraharo;;true;0
-280;Foyer Sportif;resume;Salade de fruits;55000.0;stock=20;Epicerie Isotry;;true;0
-300;Foyer Malgache;resume;Anana sy voatavo;35000.0;stock=31;Shoprite Analakely;;true;0
-300;Foyer Europeen;resume;Kitoza grille;80000.0;stock=23;Shoprite Analakely;;true;0
-300;Foyer Sans Porc;resume;Anana sy voatavo;50000.0;stock=30;Epicerie Isotry;;true;0
-300;Foyer Vegan;resume;Ravitoto aux champignons;30000.0;stock=14;Epicerie Isotry;;true;0
-300;Foyer Defaut;resume;Smoothie vert;50000.0;stock=23;Epicerie Isotry;;true;0
-300;Foyer Malbouffe;resume;Omelette fromage;60000.0;stock=17;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;16
-300;Foyer Etudiant;resume;Riz cantonais;20000.0;stock=32;Shoprite Analakely;;true;0
-300;Foyer Sportif;resume;Vary amin anana;55000.0;stock=24;Epicerie Isotry;;true;0
+260;Foyer Defaut;resume;Ravitoto aux champignons;50000.0;stock=4;Shoprite Analakely;;true;0
+260;Foyer Malbouffe;resume;Pizza fromage;54337.604164944845;stock=21;Shoprite Analakely;Fitness Park Antaninarenina (d=1068);true;11
+260;Foyer Etudiant;resume;Koba;20000.0;stock=20;Shoprite Analakely;;true;0
+260;Foyer Sportif;resume;Akoho sy voanio;55000.0;stock=31;Shoprite Analakely;;true;0

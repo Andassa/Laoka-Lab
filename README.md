@@ -104,17 +104,17 @@ CI : `.github/workflows/batch-docker.yml` (ScenarioBase à chaque push pertinent
 ```text
 LaokaLab/
 ├── models/
-│   ├── LaokaLab.gaml           # Entrée + experiments
-│   ├── global/InitMonde.gaml   # Monde, personas
+│   ├── LaokaLab.gaml           # Entrée + experiments UI
+│   ├── global/InitMonde.gaml   # Monde, personas (creer_foyer)
 │   ├── global/CycleSimu.gaml   # Boucle + exports
-│   └── species/Agents.gaml + Entites.gaml
+│   └── species/
+│       ├── Agents.gaml         # Pipeline + household
+│       └── Entites.gaml        # Plats, magasins, routes
 ├── includes/plats.csv, icons/, gis/
-├── results/                    # CSV de sortie
+├── results/
 ├── scripts/run-docker-batches.sh
 ├── Dockerfile / docker-compose.yml
-├── DOCKER.md
-├── RESULTATS.md
-└── README.md
+├── DOCKER.md / RESULTATS.md / README.md
 ```
 
 ---

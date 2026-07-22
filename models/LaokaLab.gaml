@@ -36,7 +36,8 @@ global {
 
 	/* Shapefile OSM Antananarivo (routes) — ODbL, voir includes/gis/ATTRIBUTION.txt */
 	shape_file fichier_routes <- shape_file("../includes/gis/antananarivo_roads.shp");
-	geometry shape <- envelope(fichier_routes);
+	/* Definir shape a la declaration (evite l'affectation dynamique en init). */
+	geometry shape <- utiliser_gis ? envelope(fichier_routes) : square(100.0);
 
 	household foyer_selectionne;
 
@@ -45,7 +46,6 @@ global {
 			create route from: fichier_routes;
 			write "GIS OSM : " + length(route) + " routes chargees (Antananarivo centre)";
 		} else {
-			shape <- square(100.0);
 			write "GIS OFF : carte abstraite 100x100";
 		}
 		do charger_plats;
